@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | The Shelf — Curated Reads</title>
+
+    <!-- Google Fonts: Heritage Serif & Clean Modern Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="/0d7221de-f61b-4b2c-b4a9-3c72b104271d.jpg">
+    <!-- Chart.js for Animated Analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="dashboard.css">
+        
+</head>
+
+<body>
+
+    <!-- TOP PROGRESS BAR -->
+    <div class="progress-indicator"></div>
+
+    <!-- ================= ADMIN SIDEBAR ================= -->
+    <aside class="admin-sidebar" id="adminSidebar">
+        <div class="sidebar-header">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <span>Stationery</span> House
+                    <small>School Books & Supplies</small>
+                </div>
+            </a>
+            <button class="sidebar-close-btn" id="closeSidebarBtn" aria-label="Close Sidebar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-menu">
+            <span class="menu-heading">Curator Center</span>
+            <a href="#overview" class="nav-item-link active">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-compass"></i>
+                    <span>Overview</span>
+                </div>
+            </a>
+            <a href="#shelf-inventory" class="nav-item-link">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    <span>Stationery House</span>
+                </div>
+                <span class="nav-badge">128</span>
+            </a>
+            <a href="#consignments" class="nav-item-link">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                    <span>School Consignments</span>
+                </div>
+                <span class="nav-badge" style="background: var(--gold-light);">18</span>
+            </a>
+
+            <span class="menu-heading" style="margin-top: 10px;">Scholastic Catalog</span>
+            <a href="#textbooks" class="nav-item-link">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>CBSE & ICSE Guides</span>
+                </div>
+            </a>
+            <a href="#stationery" class="nav-item-link">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                    <span>Artisan Stationery</span>
+                </div>
+            </a>
+            <a href="#kits" class="nav-item-link">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Curated Ready Kits</span>
+                </div>
+            </a>
+
+            <span class="menu-heading" style="margin-top: 10px;">Management</span>
+            <a href="#enquiries" class="nav-item-link">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <span>Parent Enquiries</span>
+                </div>
+                <span class="nav-badge" style="background:#e11d48; color:#fff;">5</span>
+            </a>
+            <a href="/index.html" class="nav-item-link">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>View Storefront</span>
+                </div>
+            </a>
+            <a href="/login.html" class="nav-item-link">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-box"></i>
+                    <span>Log Out  [-></span>
+                </div>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer-card">
+            <span class="shelf-status-pill">Main Depot Online</span>
+            <strong style="margin-top: 10px;">Kadapa Central Warehouse</strong>
+            <p>100% Acid-free paper stocks, geometry tool sets and board revisions calibrated.</p>
+            <button class="primary-gold-btn" id="openQuickAddBtn" style="padding: 8px 16px; font-size: 11px; width: 100%; justify-content: center;">
+                <i class="fa-solid fa-plus"></i> Add New Read
+            </button>
+        </div>
+    </aside>
+
+    <!-- ================= MAIN ADMIN CONTENT ================= -->
+    <div class="admin-main">
+
+        <!-- Top Navigation -->
+        <header class="top-navbar">
+            <div class="top-nav-left">
+                <button class="toggle-sidebar-btn" id="sidebarToggle" aria-label="Toggle Sidebar">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+                <div class="search-shelf-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="globalShelfSearch" placeholder="Search curated books, ISBN, kits...">
+                </div>
+            </div>
+
+            <div class="top-nav-right">
+                <!-- Theme Toggle -->
+                <button class="top-icon-btn" id="themeBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL Toggle -->
+                <button class="top-icon-btn" id="directionBtn" aria-label="Toggle Direction" style="font-size: 12px; font-weight: 700;">
+                    RTL
+                </button>
+
+                <!-- Notifications -->
+                <button class="top-icon-btn" id="notifBtn" aria-label="Notifications">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notif-badge"></span>
+                </button>
+
+                <!-- Profile -->
+                <div class="admin-profile" id="profilePill">
+                    <div class="admin-avatar">SH</div>
+                    <div class="admin-meta">
+                        <strong>Kasi Reddy</strong>
+                        <small>Head Librarian</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <main class="dashboard-container" id="overview">
+
+            <!-- Curator Welcome -->
+            <section class="curator-welcome">
+                <div>
+                    <span class="vintage-ornament">Scholastic Administration</span>
+                    <h1>Welcome to <span> Stationery House </span></h1>
+                    <p>Live inventory velocity, authenticated board curriculum allocations, and institutional consignments across regional hubs.</p>
+                </div>
+                <button class="primary-gold-btn" id="openAddTitleModal">
+                    <i class="fa-solid fa-feather"></i> Catalog New Book
+                </button>
+            </section>
+
+            <!-- KPI Cards -->
+            <section class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                        <span class="kpi-growth growth-up"><i class="fa-solid fa-arrow-trend-up"></i> +18.4%</span>
+                    </div>
+                    <div class="kpi-title">Monthly Consignment Revenue</div>
+                    <div class="kpi-value counter" data-target="482950">₹0</div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-book-journal-whills"></i></div>
+                        <span class="kpi-growth growth-up"><i class="fa-solid fa-check"></i> 94% In-Stock</span>
+                    </div>
+                    <div class="kpi-title">Curated Titles On House</div>
+                    <div class="kpi-value counter" data-target="3420">0</div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-school"></i></div>
+                        <span class="kpi-growth growth-up"><i class="fa-solid fa-arrow-trend-up"></i> +12 Schools</span>
+                    </div>
+                    <div class="kpi-title">Active Partner Schools</div>
+                    <div class="kpi-value counter" data-target="48">0</div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <div class="kpi-icon-wrap"><i class="fa-solid fa-clipboard-list"></i></div>
+                        <span class="kpi-growth growth-down"><i class="fa-solid fa-clock"></i> 4 Urgent</span>
+                    </div>
+                    <div class="kpi-title">Pending Consignment Enquiries</div>
+                    <div class="kpi-value counter" data-target="19">0</div>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="analytics-grid">
+                <div class="chart-card">
+                    <div class="card-header-flex">
+                        <div>
+                            <span class="vintage-ornament" style="color: var(--gold-primary);">Velocity</span>
+                            <h3>Academic Supply Dispatches (2026)</h3>
+                        </div>
+                        <select class="chart-filter-select" id="salesPeriodSelect">
+                            <option>Monthly View</option>
+                            <option>Quarterly Term</option>
+                            <option>Annual Academic</option>
+                        </select>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="salesVelocityChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="card-header-flex">
+                        <div>
+                            <span class="vintage-ornament" style="color: var(--gold-primary);">Allocation</span>
+                            <h3>House Distribution</h3>
+                        </div>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="categoryDonutChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shelf Inventory Table -->
+            <section class="shelf-table-card" id="shelf-inventory">
+                <div class="table-toolbar">
+                    <div>
+                        <span class="vintage-ornament" style="color: var(--gold-primary);">Catalog Registry</span>
+                        <h3 style="font-size: 22px; color: var(--text-main);">Stationery House </h3>
+                    </div>
+                    <div class="filter-tags">
+                        <button class="filter-pill active" data-filter="all">All Items</button>
+                        <button class="filter-pill" data-filter="Mathematics">Mathematics</button>
+                        <button class="filter-pill" data-filter="Science">Science</button>
+                        <button class="filter-pill" data-filter="Stationery">Fine Stationery</button>
+                        <button class="filter-pill" data-filter="School Kits">Curated Kits</button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="shelf-table">
+                        <thead>
+                            <tr>
+                                <th>Item & Details</th>
+                                <th>Category</th>
+                                <th>Unit Price</th>
+                                <th>In Warehouse</th>
+                                <th>Stock Health</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inventoryTableBody">
+                            <tr data-cat="Mathematics">
+                                <td>
+                                    <div class="book-item-meta">
+                                        <img src="https://tse2.mm.bing.net/th/id/OIP.AHvcxhQB3a3Jr6TvTvsnKAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Maths Book" class="book-item-img">
+                                        <div>
+                                            <strong>Comprehensive Mathematics Vol. X</strong>
+                                            <div style="font-size: 11.5px; color: var(--text-muted);">CBSE 10th Certified • ISBN 978-81-203</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span style="font-weight: 600;">Mathematics</span></td>
+                                <td style="font-weight: 700; color: var(--gold-primary); font-family: 'Playfair Display';">₹380</td>
+                                <td>540 Copies</td>
+                                <td><span class="status-badge in-stock"><i class="fa-solid fa-circle-check"></i> High Stock</span></td>
+                                <td>
+                                    <div class="action-btns-group">
+                                        <button class="action-btn-circle edit-item-btn" title="Quick Edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="action-btn-circle view-item-btn" title="Inspect Record"><i class="fa-solid fa-eye"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-cat="Science">
+                                <td>
+                                    <div class="book-item-meta">
+                                        <img src="https://images.sello.io/products/acc/50892/117333818/8a0437f853ac9bfb20ff8fba8707b7ff.jpg?imWidth=600" alt="Physics Book" class="book-item-img">
+                                        <div>
+                                            <strong>Principles of Physics & Mechanics</strong>
+                                            <div style="font-size: 11.5px; color: var(--text-muted);">Foundational Senior • Hardbound</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span style="font-weight: 600;">Science</span></td>
+                                <td style="font-weight: 700; color: var(--gold-primary); font-family: 'Playfair Display';">₹420</td>
+                                <td>380 Copies</td>
+                                <td><span class="status-badge in-stock"><i class="fa-solid fa-circle-check"></i> Stable</span></td>
+                                <td>
+                                    <div class="action-btns-group">
+                                        <button class="action-btn-circle edit-item-btn" title="Quick Edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="action-btn-circle view-item-btn" title="Inspect Record"><i class="fa-solid fa-eye"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-cat="Stationery">
+                                <td>
+                                    <div class="book-item-meta">
+                                        <img src="https://www.submarinepens.com/cdn/shop/files/1551_FP__7.jpg?v=1774087360" alt="Fountain Pen" class="book-item-img">
+                                        <div>
+                                            <strong>Royal Sovereign Fountain Pen Set</strong>
+                                            <div style="font-size: 11.5px; color: var(--text-muted);">Gold-Iridium Nib • Archival Blue Ink</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span style="font-weight: 600;">Stationery</span></td>
+                                <td style="font-weight: 700; color: var(--gold-primary); font-family: 'Playfair Display';">₹350</td>
+                                <td>85 Sets</td>
+                                <td><span class="status-badge low-stock"><i class="fa-solid fa-triangle-exclamation"></i> Low Stock</span></td>
+                                <td>
+                                    <div class="action-btns-group">
+                                        <button class="action-btn-circle edit-item-btn" title="Quick Edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="action-btn-circle view-item-btn" title="Inspect Record"><i class="fa-solid fa-eye"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-cat="School Kits">
+                                <td>
+                                    <div class="book-item-meta">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/fbadfd42195279.57c480e8998ad.jpg" alt="High School Kit" class="book-item-img">
+                                        <div>
+                                            <strong>High School Royal Signature Kit</strong>
+                                            <div style="font-size: 11.5px; color: var(--text-muted);">10 Notebooks + Brass Geometry Box</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span style="font-weight: 600;">School Kits</span></td>
+                                <td style="font-weight: 700; color: var(--gold-primary); font-family: 'Playfair Display';">₹999</td>
+                                <td>210 Bundles</td>
+                                <td><span class="status-badge in-stock"><i class="fa-solid fa-circle-check"></i> High Demand</span></td>
+                                <td>
+                                    <div class="action-btns-group">
+                                        <button class="action-btn-circle edit-item-btn" title="Quick Edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="action-btn-circle view-item-btn" title="Inspect Record"><i class="fa-solid fa-eye"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Bottom Quick Lists -->
+            <section class="bottom-shelf-grid" id="consignments">
+                <!-- Institutional Orders -->
+                <div class="mini-list-card">
+                    <div class="card-header-flex">
+                        <h3>Recent Institutional Consignments</h3>
+                        <a href="#" style="font-size: 12px; color: var(--gold-primary); font-weight: 700;">View All</a>
+                    </div>
+                    <div class="consignment-item">
+                        <div class="consignment-school">
+                            <div class="school-icon-badge"><i class="fa-solid fa-school-flag"></i></div>
+                            <div>
+                                <strong>Hyderabad Public School</strong>
+                                <small style="display: block; color: var(--text-muted);">450 High School Royal Kits</small>
+                            </div>
+                        </div>
+                        <span class="status-badge in-stock">Dispatched</span>
+                    </div>
+                    <div class="consignment-item">
+                        <div class="consignment-school">
+                            <div class="school-icon-badge"><i class="fa-solid fa-building-columns"></i></div>
+                            <div>
+                                <strong>St. Joseph's Academy, Kadapa</strong>
+                                <small style="display: block; color: var(--text-muted);">320 CBSE Physics & Maths Textbooks</small>
+                            </div>
+                        </div>
+                        <span class="status-badge" style="background: var(--info-bg); color: var(--info);">Packing</span>
+                    </div>
+                    <div class="consignment-item">
+                        <div class="consignment-school">
+                            <div class="school-icon-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div>
+                                <strong>Vasini Trust Vidyanikethan</strong>
+                                <small style="display: block; color: var(--text-muted);">600 Custom Ruled Registers</small>
+                            </div>
+                        </div>
+                        <span class="status-badge low-stock">Awaiting Sign-off</span>
+                    </div>
+                </div>
+
+                <!-- Recent Parent & Desk Enquiries -->
+                <div class="mini-list-card" id="enquiries">
+                    <div class="card-header-flex">
+                        <h3>Latest Parent & Desk Requests</h3>
+                        <a href="#" style="font-size: 12px; color: var(--gold-primary); font-weight: 700;">Resolve All</a>
+                    </div>
+                    <div class="consignment-item">
+                        <div>
+                            <strong>Dharshini (High School Parent)</strong>
+                            <p style="font-size: 12.5px; color: var(--text-muted); margin-top: 2px;">"Need 2 High School Royal Kits with expedited doorstep parcel delivery."</p>
+                        </div>
+                        <button class="primary-gold-btn" style="padding: 6px 14px; font-size: 11px;">Respond</button>
+                    </div>
+                    <div class="consignment-item">
+                        <div>
+                            <strong>Priya (Class 10 Student)</strong>
+                            <p style="font-size: 12.5px; color: var(--text-muted); margin-top: 2px;">"Enquiry for Master Precision Brass Geometry Box replacement compass."</p>
+                        </div>
+                        <button class="primary-gold-btn" style="padding: 6px 14px; font-size: 11px;">Respond</button>
+                    </div>
+                    <div class="consignment-item">
+                        <div>
+                            <strong>Kadapa Municipal High School</strong>
+                            <p style="font-size: 12.5px; color: var(--text-muted); margin-top: 2px;">"Quotation requested for 1,200 subsidized exam geometry packs."</p>
+                        </div>
+                        <button class="primary-gold-btn" style="padding: 6px 14px; font-size: 11px;">Respond</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Admin Footer -->
+        <footer class="admin-footer">
+            <div>
+                © 2026 <strong>Stationery House.</strong>. All Rights Reserved.
+            </div>
+            <div>
+                Built for Scholastic Excellence • Kadapa Depot Hub
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ================= ADD / EDIT TITLE MODAL ================= -->
+    <div class="modal" id="bookModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeBookModal">&times;</button>
+            <span class="vintage-ornament" style="color: var(--gold-primary);">The Shelf Registry</span>
+            <h3 style="font-size: 24px; margin-bottom: 20px;" id="modalFormTitle">Catalog New Scholastic Read</h3>
+            <form id="bookForm" style="display: grid; gap: 14px;">
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Book / Item Title</label>
+                    <input type="text" id="formBookTitle" required placeholder="e.g. Modern Biology Class 11" style="width: 100%; padding: 11px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                    <div>
+                        <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Category</label>
+                        <select id="formBookCat" style="width: 100%; padding: 11px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                            <option>Mathematics</option>
+                            <option>Science</option>
+                            <option>Stationery</option>
+                            <option>School Kits</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Unit Price (₹)</label>
+                        <input type="number" id="formBookPrice" required placeholder="420" style="width: 100%; padding: 11px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                    </div>
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Initial Stock Quantity</label>
+                    <input type="number" id="formBookStock" required placeholder="150" style="width: 100%; padding: 11px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <button type="submit" class="primary-gold-btn" style="width: 100%; justify-content: center; margin-top: 10px;">
+                    Save Book to The Shelf
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-msg" id="toastMsg">Action completed successfully ✓</div>
+
+    <!-- ================= DASHBOARD SCRIPT ================= -->
+    <script src="dashboard.js">
+       
+    </script>
+</body>
+</html>

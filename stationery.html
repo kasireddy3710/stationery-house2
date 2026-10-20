@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books & Fine Stationery Collection | Stationery House</title>
+
+    <!-- Google Fonts: Heritage Serif & Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/0d7221de-f61b-4b2c-b4a9-3c72b104271d.jpg">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="stationery.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <span>Stationery</span> House
+                    <small>School Books & Supplies</small>
+                </div>
+            </a>
+
+            <!-- NAVIGATION ITEMS WITH ACTIVE STATIONERY LINK -->
+            <nav class="nav-links" id="navLinks">
+                <div class="nav-item has-dropdown" id="homeDropdownItem">
+                    <a href="/index.html" class="nav-link" id="homeNavBtn" aria-expanded="false" aria-haspopup="true">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+                    </a>
+                    <div class="dropdown-menu" id="homeDropdownMenu" role="menu">
+                        <a href="/index.html" class="dropdown-item" role="menuitem">
+                            <div class="dropdown-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="dropdown-text">
+                                <strong>Home-1</strong>
+                            </div>
+                        </a>
+                        <a href="/home2.html" class="dropdown-item" role="menuitem">
+                            <div class="dropdown-icon">
+                                <i class="fa-solid fa-home"></i>
+                            </div>
+                            <div class="dropdown-text">
+                                <strong>Home-2</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- STATIONERY TAG WITH ACTIVE LINE -->
+
+                <div class="nav-item">
+                    <a href="/about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/stationery.html" class="nav-link active">Stationery</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="/offers.html" class="nav-link">Offers</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/dashboard.html" class="nav-link">Dashboard</a>
+                </div>
+            </nav>
+
+            <!-- NAV ACTIONS -->
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="direction-btn" id="directionBtn" aria-label="Toggle RTL">
+                    <span>RTL</span>
+                </button>
+
+                <a href="#books" class="shop-btn">
+                    <span>Shop Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= HERO SLIDER: 3 ANIMATED CLIP PHOTOS ================= -->
+    <section class="slider-section" id="home">
+        <div class="slider-track" id="sliderTrack">
+
+            <!-- CLIP 1 -->
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('https://static.wixstatic.com/media/f57b53_f0ad09e5da80482aa345d76b77287b0d~mv2_d_5296_3530_s_4_2.jpg/v1/fill/w_680,h_453,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f57b53_f0ad09e5da80482aa345d76b77287b0d~mv2_d_5296_3530_s_4_2.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="vintage-ornament">Curated Academic Library</span>
+                    <h1 class="slide-title">
+                        Authorized Curriculum & <span>Textbook Repository</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Explore certified school textbooks spanning CBSE, ICSE, and State Boards. Complete syllabus-aligned volumes printed on archival paper for every dedicated scholar.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#books" class="primary-btn">
+                            Explore Books Collection <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#stationery" class="secondary-btn">
+                            Browse 9 Fine Stationery Tools
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIP 2 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://images.squarespace-cdn.com/content/v1/66134d4504e1965dc9b3980a/989f493d-d9ab-44f8-8bfd-fb29092956dc/BookProject_HardcoverLayout.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="vintage-ornament">STEM & Precision Instruments</span>
+                    <h1 class="slide-title">
+                        Artisan Writing Tools & <span>Laboratory Handbooks</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Rigorous physics problem sets, solid brass geometry boxes, and practical chemistry manuals approved by state educational boards and Olympiad trainers.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#stationery" class="primary-btn">
+                            Explore Stationery <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#books" class="secondary-btn">
+                            View Reference Volumes
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIP 3 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://static.vecteezy.com/system/resources/previews/011/886/366/large_2x/object-education-green-nature-background-with-stack-of-ancient-books-or-old-bible-open-paper-book-on-wooden-table-with-copy-space-concept-of-back-to-school-research-study-photo.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="vintage-ornament">Heritage of Scholastic Craft</span>
+                    <h1 class="slide-title">
+                        Archival Notebooks, <span>Writing Quills & Atlases</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Enrich young minds with world civilizations, handcrafted calligraphy sets, and timeless literary discourse preserved with royal distinction.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#books" class="primary-btn">
+                            Discover Classics <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <button class="secondary-btn" id="heroOrderBtn">
+                            Submit Institution Enquiry
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slider Arrows -->
+        <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn slider-next" id="sliderNext" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <span class="slider-dot active" data-slide="0"></span>
+            <span class="slider-dot" data-slide="1"></span>
+            <span class="slider-dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- ================= VALUE STRIP ================= -->
+    <div class="value-strip" id="values">
+        <div class="container value-grid">
+            <div class="value-item">
+                <div class="value-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                <div>
+                    <strong>Authorized Editions</strong>
+                    <span>Direct board-certified publishers</span>
+                </div>
+            </div>
+            <div class="value-item">
+                <div class="value-icon"><i class="fa-solid fa-stamp"></i></div>
+                <div>
+                    <strong>Updated 2026 Curriculum</strong>
+                    <span>Latest revised educational standards</span>
+                </div>
+            </div>
+            <div class="value-item">
+                <div class="value-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                <div>
+                    <strong>Archival Writing Grade</strong>
+                    <span>Acid-free paper & precision brass</span>
+                </div>
+            </div>
+            <div class="value-item">
+                <div class="value-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                <div>
+                    <strong>Doorstep Parcel Service</strong>
+                    <span>Safe moisture-proof shrink packaging</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= BOOKS SECTION: 15 COMPLETE BOOKS ================= -->
+    <section class="section" id="books">
+        <div class="container">
+            <div class="section-header">
+                <span class="vintage-ornament">Curated Scholastic Library</span>
+                <h2>School & Reference Textbooks</h2>
+                <p>Explore our handpicked catalog of 15 authentic board textbooks, laboratory manuals, and competitive foundation volumes.</p>
+            </div>
+
+            <!-- Category Filter Tabs for Books -->
+            <div class="filter-wrapper" id="bookFilterWrapper">
+                <button class="filter-tab active" data-filter="all">All 15 Books</button>
+                <button class="filter-tab" data-filter="science">Sciences & Math</button>
+                <button class="filter-tab" data-filter="social">Social Sciences</button>
+                <button class="filter-tab" data-filter="languages">Languages</button>
+                <button class="filter-tab" data-filter="tech">Commerce & Tech</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <!-- BOOK 1 -->
+                <article class="product-card" data-category="science">
+                    <span class="product-badge royal">Class 12 CBSE</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.Cd45LqL1aXs21s0kQL-zdgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Comprehensive Mathematics Volume XII" loading="lazy">
+                        <button class="quick-view-btn" data-title="Comprehensive Mathematics Vol. XII" data-price="380" data-cat="Mathematics" data-img="https://tse3.mm.bing.net/th/id/OIP.Cd45LqL1aXs21s0kQL-zdgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Mathematics</span>
+                        <h3 class="product-title">Comprehensive Mathematics Vol. XII</h3>
+                        <p class="product-desc">In-depth mathematical concepts with worked-out board solutions, geometry proofs, and practice sets.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹380</span>
+                            <button class="order-btn" data-item="Comprehensive Mathematics Vol. XII" data-price="380">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 2 -->
+                <article class="product-card" data-category="science">
+                    <span class="product-badge">Bestseller</span>
+                    <div class="product-img-wrap">
+                        <img src="https://www.ajayonlinestall.com/wp-content/uploads/2026/01/9788126552566.jpg" alt="Principles of Physics & Mechanics" loading="lazy">
+                        <button class="quick-view-btn" data-title="Principles of Physics & Mechanics" data-price="420" data-cat="Science" data-img="https://www.ajayonlinestall.com/wp-content/uploads/2026/01/9788126552566.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Physics</span>
+                        <h3 class="product-title">Principles of Physics & Mechanics</h3>
+                        <p class="product-desc">Classical kinematics, thermodynamics, electromagnetism, and optics with vibrant diagrams.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹420</span>
+                            <button class="order-btn" data-item="Principles of Physics & Mechanics" data-price="420">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 3 -->
+                <article class="product-card" data-category="science">
+                    <span class="product-badge royal">Lab Certified</span>
+                    <div class="product-img-wrap">
+                        <img src="https://media.karousell.com/media/photos/products/2023/1/9/chemistry_laboratory_manual_1673263435_53de3b7f" alt="Modern Chemistry & Lab Manual" loading="lazy">
+                        <button class="quick-view-btn" data-title="Modern Chemistry & Lab Manual" data-price="390" data-cat="Chemistry" data-img="https://media.karousell.com/media/photos/products/2023/1/9/chemistry_laboratory_manual_1673263435_53de3b7f">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Chemistry</span>
+                        <h3 class="product-title">Modern Chemistry & Lab Manual</h3>
+                        <p class="product-desc">Covers organic synthesis, chemical bonding, periodic trends, and safe laboratory experiments.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹390</span>
+                            <button class="order-btn" data-item="Modern Chemistry & Lab Manual" data-price="390">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 4 -->
+                <article class="product-card" data-category="science">
+                    <span class="product-badge">Illustrated Edition</span>
+                    <div class="product-img-wrap">
+                        <img src="https://static.wixstatic.com/media/258e35_418926b32bf14e0fb0a00b382713e9e1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="Cellular Biology & Botanical Atlas" loading="lazy">
+                        <button class="quick-view-btn" data-title="Cellular Biology & Botanical Atlas" data-price="410" data-cat="Biology" data-img="https://static.wixstatic.com/media/258e35_418926b32bf14e0fb0a00b382713e9e1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Biology</span>
+                        <h3 class="product-title">Cellular Biology & Botanical Atlas</h3>
+                        <p class="product-desc">Taxonomic trees, human anatomy plates, genetics, cellular reproduction, and ecological systems.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹410</span>
+                            <button class="order-btn" data-item="Cellular Biology & Botanical Atlas" data-price="410">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 5 -->
+                <article class="product-card" data-category="languages">
+                    <span class="product-badge royal">Classics</span>
+                    <div class="product-img-wrap">
+                        <img src="https://i5.walmartimages.com/asr/4914d486-f8b7-411e-a6f3-67091f5fb74b_1.6468600ac4fa2e99a6f4277bb27a068f.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="Heritage English Literature Anthology" loading="lazy">
+                        <button class="quick-view-btn" data-title="Heritage English Literature Anthology" data-price="290" data-cat="Language" data-img="https://i5.walmartimages.com/asr/4914d486-f8b7-411e-a6f3-67091f5fb74b_1.6468600ac4fa2e99a6f4277bb27a068f.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">English</span>
+                        <h3 class="product-title">Heritage English Literature Anthology</h3>
+                        <p class="product-desc">Timeless prose selections, classical poetry analysis, vocabulary etymology, and grammar exercises.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹290</span>
+                            <button class="order-btn" data-item="Heritage English Literature Anthology" data-price="290">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 6 -->
+                <article class="product-card" data-category="social">
+                    <span class="product-badge">Collector's Map</span>
+                    <div class="product-img-wrap">
+                        <img src="https://www.thamesandhudson.com/cdn/shop/products/9780500251850_std_the-new-atlas-of-world-history-global-events-at-a-glance.jpg?v=1696332500&width=1946" alt="World History & Civilization Atlas" loading="lazy">
+                        <button class="quick-view-btn" data-title="World History & Civilization Atlas" data-price="340" data-cat="History" data-img="https://www.thamesandhudson.com/cdn/shop/products/9780500251850_std_the-new-atlas-of-world-history-global-events-at-a-glance.jpg?v=1696332500&width=1946">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">History</span>
+                        <h3 class="product-title">World History & Civilization Atlas</h3>
+                        <p class="product-desc">Chronological journey from the Indus Valley Civilization to contemporary world geopolitics.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹340</span>
+                            <button class="order-btn" data-item="World History & Civilization Atlas" data-price="340">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 7 -->
+                <article class="product-card" data-category="social">
+                    <span class="product-badge royal">Top Rated</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.vvw6GSlRCwJXtfxiQyh6XAHaFr?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Physical Geography & Cartography" loading="lazy">
+                        <button class="quick-view-btn" data-title="Physical Geography & Cartography" data-price="320" data-cat="Geography" data-img="https://tse1.mm.bing.net/th/id/OIP.vvw6GSlRCwJXtfxiQyh6XAHaFr?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Geography</span>
+                        <h3 class="product-title">Physical Geography & Cartography</h3>
+                        <p class="product-desc">Meteorological studies, tectonic phenomena, resource conservation, and topographical maps.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹320</span>
+                            <button class="order-btn" data-item="Physical Geography & Cartography" data-price="320">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 8 -->
+                <article class="product-card" data-category="languages">
+                    <span class="product-badge">Classical</span>
+                    <div class="product-img-wrap">
+                        <img src="https://boibipani.in/public/product/sanskrit-grammar-semester-v-c-c-12.jpg" alt="Classical Sanskrit Reader & Grammar" loading="lazy">
+                        <button class="quick-view-btn" data-title="Classical Sanskrit Reader & Grammar" data-price="260" data-cat="Classical" data-img="https://boibipani.in/public/product/sanskrit-grammar-semester-v-c-c-12.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Sanskrit</span>
+                        <h3 class="product-title">Classical Sanskrit Reader & Grammar</h3>
+                        <p class="product-desc">Structured Paninian grammatical tables, shlokas, sandhi rules, and translated epics.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹260</span>
+                            <button class="order-btn" data-item="Classical Sanskrit Reader & Grammar" data-price="260">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 9 -->
+                <article class="product-card" data-category="tech">
+                    <span class="product-badge royal">New Edition</span>
+                    <div class="product-img-wrap">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/fe/eb/2e/feeb2e2b-69cb-c88e-0b9a-501619280322/cover.jpg/1200x630wz.png" alt="Computer Science & Python Algorithms" loading="lazy">
+                        <button class="quick-view-btn" data-title="Computer Science & Python Algorithms" data-price="450" data-cat="Technology" data-img="https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/fe/eb/2e/feeb2e2b-69cb-c88e-0b9a-501619280322/cover.jpg/1200x630wz.png">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Computer Science</span>
+                        <h3 class="product-title">Computer Science & Python Algorithms</h3>
+                        <p class="product-desc">Data structures, computational logic, OOP principles, SQL queries, and project problems.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹450</span>
+                            <button class="order-btn" data-item="Computer Science & Python Algorithms" data-price="450">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 10 -->
+                <article class="product-card" data-category="social">
+                    <span class="product-badge">Universal Reference</span>
+                    <div class="product-img-wrap">
+                        <img src="https://th.bing.com/th/id/R.e9d4d1d48e3bfb59f2f68a82d03e42a0?rik=9HQar5s%2fDAD%2f4Q&riu=http%3a%2f%2fmkg.com.pk%2fcdn%2fshop%2ffiles%2fJWT-World-General-Knowledge-Book-For-CSS_-PMS_-By-Abdul-Rasheed-Multan-Kitab-Ghar-28075012.jpg%3fv%3d1741073648&ehk=ypuJOmcvL7TcoiW20N1GpSQOnF4AJfFpiw882MZHtIM%3d&risl=&pid=ImgRaw&r=0" alt="General Knowledge & World Affairs" loading="lazy">
+                        <button class="quick-view-btn" data-title="General Knowledge & World Affairs" data-price="270" data-cat="General" data-img="https://th.bing.com/th/id/R.e9d4d1d48e3bfb59f2f68a82d03e42a0?rik=9HQar5s%2fDAD%2f4Q&riu=http%3a%2f%2fmkg.com.pk%2fcdn%2fshop%2ffiles%2fJWT-World-General-Knowledge-Book-For-CSS_-PMS_-By-Abdul-Rasheed-Multan-Kitab-Ghar-28075012.jpg%3fv%3d1741073648&ehk=ypuJOmcvL7TcoiW20N1GpSQOnF4AJfFpiw882MZHtIM%3d&risl=&pid=ImgRaw&r=0">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">General Knowledge</span>
+                        <h3 class="product-title">General Knowledge & World Affairs</h3>
+                        <p class="product-desc">Updated encyclopedia covering global geography, treaties, scientific inventions, and current events.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹270</span>
+                            <button class="order-btn" data-item="General Knowledge & World Affairs" data-price="270">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 11 -->
+                <article class="product-card" data-category="tech">
+                    <span class="product-badge royal">Commerce Core</span>
+                    <div class="product-img-wrap">
+                        <img src="https://static.wixstatic.com/media/89b1fb_74fdc7544b8c45a5a7a047495c76feed~mv2.png/v1/fill/w_1500,h_1383,al_c/1721050882.png" alt="Financial Accounting & Business Studies" loading="lazy">
+                        <button class="quick-view-btn" data-title="Financial Accounting & Business Studies" data-price="430" data-cat="Commerce" data-img="https://static.wixstatic.com/media/89b1fb_74fdc7544b8c45a5a7a047495c76feed~mv2.png/v1/fill/w_1500,h_1383,al_c/1721050882.png">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Commerce</span>
+                        <h3 class="product-title">Financial Accounting & Business Studies</h3>
+                        <p class="product-desc">Double-entry bookkeeping, trial balance, ledger posting, and organizational principles.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹430</span>
+                            <button class="order-btn" data-item="Financial Accounting & Business Studies" data-price="430">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 12 -->
+                <article class="product-card" data-category="tech">
+                    <span class="product-badge">Senior Secondary</span>
+                    <div class="product-img-wrap">
+                        <img src="https://vkpublications.com/cdn/shop/files/9789356122642_edbd0212-bdaf-4968-92ed-464044f2ef80.jpg?v=1776945577&width=750" alt="Principles of Macroeconomics Vol. XII" loading="lazy">
+                        <button class="quick-view-btn" data-title="Principles of Macroeconomics Vol. XII" data-price="360" data-cat="Economics" data-img="https://vkpublications.com/cdn/shop/files/9789356122642_edbd0212-bdaf-4968-92ed-464044f2ef80.jpg?v=1776945577&width=750">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Economics</span>
+                        <h3 class="product-title">Principles of Macroeconomics Vol. XII</h3>
+                        <p class="product-desc">National income accounting, monetary policy frameworks, banking systems, and fiscal budgets.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹360</span>
+                            <button class="order-btn" data-item="Principles of Macroeconomics Vol. XII" data-price="360">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 13 -->
+                <article class="product-card" data-category="science">
+                    <span class="product-badge royal">Olympiad Prep</span>
+                    <div class="product-img-wrap">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihUIrSTbDFT8_oIbOtICNdNo8gjgP6i2eDID2Iv7r-0AvJ2bf1h68K6QMjRHyILXMzWPPmwEKM8oaEZluCVQ3JbAJJuNjP137uXIYubb81jldk79kpNA1JZq2fT4LlZIUpyTf20DFySFMjcAvrrXQswS8PcUqWccKDk7auDe4HZQo-FvP1G5A8Umwwwdo/w1200-h630-p-k-no-nu/SAMPLE%20-%20Copy%20-%20Copy%20-%20Copy%20-%20Copy%20-%20Copy%20(9)%20-%20Copy.jpeg" alt="Logical Reasoning & Quantitative Aptitude" loading="lazy">
+                        <button class="quick-view-btn" data-title="Logical Reasoning & Quantitative Aptitude" data-price="310" data-cat="Competitive" data-img="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihUIrSTbDFT8_oIbOtICNdNo8gjgP6i2eDID2Iv7r-0AvJ2bf1h68K6QMjRHyILXMzWPPmwEKM8oaEZluCVQ3JbAJJuNjP137uXIYubb81jldk79kpNA1JZq2fT4LlZIUpyTf20DFySFMjcAvrrXQswS8PcUqWccKDk7auDe4HZQo-FvP1G5A8Umwwwdo/w1200-h630-p-k-no-nu/SAMPLE%20-%20Copy%20-%20Copy%20-%20Copy%20-%20Copy%20-%20Copy%20(9)%20-%20Copy.jpeg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Aptitude</span>
+                        <h3 class="product-title">Logical Reasoning & Quantitative Aptitude</h3>
+                        <p class="product-desc">NTSE, Olympiad, and competitive mental ability questions with step-by-step shortcuts.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹310</span>
+                            <button class="order-btn" data-item="Logical Reasoning & Quantitative Aptitude" data-price="310">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 14 -->
+                <article class="product-card" data-category="languages">
+                    <span class="product-badge">Sahitya Ratna</span>
+                    <div class="product-img-wrap">
+                        <img src="https://rgbooks.net/wp-content/uploads/2020/05/1625726904.png" alt="Hindi Vyakaran evam Sahitya Sangrah" loading="lazy">
+                        <button class="quick-view-btn" data-title="Hindi Vyakaran evam Sahitya Sangrah" data-price="250" data-cat="Hindi" data-img="https://rgbooks.net/wp-content/uploads/2020/05/1625726904.png">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Hindi</span>
+                        <h3 class="product-title">Hindi Vyakaran evam Sahitya Sangrah</h3>
+                        <p class="product-desc">Comprehensive grammar concepts, dohas by Kabir and Rahim, and essay writing patterns.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹250</span>
+                            <button class="order-btn" data-item="Hindi Vyakaran evam Sahitya Sangrah" data-price="250">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 15 -->
+                <article class="product-card" data-category="social">
+                    <span class="product-badge royal">Eco-Studies</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.mB0yR8RPHofkFIQ88MswtAHaFr?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Environmental Science & Sustainability" loading="lazy">
+                        <button class="quick-view-btn" data-title="Environmental Science & Sustainability" data-price="280" data-cat="EVS" data-img="https://tse2.mm.bing.net/th/id/OIP.mB0yR8RPHofkFIQ88MswtAHaFr?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">EVS</span>
+                        <h3 class="product-title">Environmental Science & Sustainability</h3>
+                        <p class="product-desc">Ecosystem conservation, climate action, renewable energy models, and sustainability projects.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹280</span>
+                            <button class="order-btn" data-item="Environmental Science & Sustainability" data-price="280">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 9 FINE STATIONERY ITEMS SECTION ================= -->
+    <section class="section" id="stationery" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header">
+                <span class="vintage-ornament">Craftsmanship In Every Stroke</span>
+                <h2>Fine Stationery & Scholastic Tools</h2>
+                <p>Curated writing implements, durable archival journals, precision mathematical tools, and artist sets built to empower every dedicated scholar.</p>
+            </div>
+
+            <!-- Category Filter Tabs for Stationery -->
+            <div class="filter-wrapper" id="stationeryFilterWrapper">
+                <button class="filter-tab active" data-filter="all">All 9 Items</button>
+                <button class="filter-tab" data-filter="writing">Writing Implements</button>
+                <button class="filter-tab" data-filter="geometry">Mathematical Tools</button>
+                <button class="filter-tab" data-filter="notebooks">Paper & Journals</button>
+                <button class="filter-tab" data-filter="art">Art & Accessories</button>
+            </div>
+
+            <div class="product-grid" id="stationeryGrid">
+
+                <!-- STATIONERY 1 -->
+                <article class="product-card" data-category="writing">
+                    <span class="product-badge royal">Handcrafted</span>
+                    <div class="product-img-wrap">
+                        <img src="https://www.submarinepens.com/cdn/shop/files/1551_FP__7.jpg?v=1774087360" alt="Royal Sovereign Fountain Pen Set" loading="lazy">
+                        <button class="quick-view-btn" data-title="Royal Sovereign Fountain Pen Set" data-price="350" data-cat="Writing Implements" data-img="https://www.submarinepens.com/cdn/shop/files/1551_FP__7.jpg?v=1774087360">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Writing Tools</span>
+                        <h3 class="product-title">Royal Sovereign Fountain Pen Set</h3>
+                        <p class="product-desc">24K gold-plated iridium nib with refillable ink converter and twin bottles of deep royal blue archival ink.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹350</span>
+                            <button class="order-btn" data-item="Royal Sovereign Fountain Pen Set" data-price="350">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 2 -->
+                <article class="product-card" data-category="geometry">
+                    <span class="product-badge royal">Precision Brass</span>
+                    <div class="product-img-wrap">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2026/2/581031493/RZ/RP/RV/1986103/premium-geometry-box-1000x1000.jpg" alt="Master Precision Brass Geometry Box" loading="lazy">
+                        <button class="quick-view-btn" data-title="Master Precision Brass Geometry Box" data-price="180" data-cat="Mathematical Tools" data-img="https://5.imimg.com/data5/SELLER/Default/2026/2/581031493/RZ/RP/RV/1986103/premium-geometry-box-1000x1000.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Geometry Tools</span>
+                        <h3 class="product-title">Master Precision Brass Geometry Box</h3>
+                        <p class="product-desc">Heavy-gauge solid brass compass, divider, protractor, set squares, and laser-engraved stainless scale.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹180</span>
+                            <button class="order-btn" data-item="Master Precision Brass Geometry Box" data-price="180">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 3 -->
+                <article class="product-card" data-category="notebooks">
+                    <span class="product-badge">Pack of 3</span>
+                    <div class="product-img-wrap">
+                        <img src="https://s.alicdn.com/@sc04/kf/H26710621f1c64cedb6394034ec3a13e7u.jpg_720x720q50.jpg" alt="Hardbound Ruled Journals" loading="lazy">
+                        <button class="quick-view-btn" data-title="Hardbound Ruled Journals (Pack of 3)" data-price="290" data-cat="Paper & Journals" data-img="https://s.alicdn.com/@sc04/kf/H26710621f1c64cedb6394034ec3a13e7u.jpg_720x720q50.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Notebooks</span>
+                        <h3 class="product-title">Hardbound Ruled Journals (Pack of 3)</h3>
+                        <p class="product-desc">100 GSM creamy parchment pages with reinforced cloth spine, silk ribbon bookmarks, and bleed resistance.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹290</span>
+                            <button class="order-btn" data-item="Hardbound Ruled Journals (Pack of 3)" data-price="290">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 4 -->
+                <article class="product-card" data-category="art">
+                    <span class="product-badge royal">Artist Palette</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.7WfURw0jM5loqWPPxTwQnwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Botanical Watercolor Cake Palette" loading="lazy">
+                        <button class="quick-view-btn" data-title="Botanical Watercolor Cake Palette (24 Shades)" data-price="420" data-cat="Fine Art Supplies" data-img="https://tse3.mm.bing.net/th/id/OIP.7WfURw0jM5loqWPPxTwQnwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Art Supplies</span>
+                        <h3 class="product-title">Botanical Watercolor Cake Palette (24 Shades)</h3>
+                        <p class="product-desc">Highly pigmented, non-toxic lightfast watercolor pans with natural hair detailing brushes and metal mixing tin.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹420</span>
+                            <button class="order-btn" data-item="Botanical Watercolor Cake Palette" data-price="420">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 5 -->
+                <article class="product-card" data-category="writing">
+                    <span class="product-badge">Set of 8</span>
+                    <div class="product-img-wrap">
+                        <img src="https://i5.walmartimages.com/seo/Acurit-0-60mm-Fine-Point-Technical-Drawing-Pens-Black-Ink-for-Artists-Architects-Engineers-SmAll-Nibs-Acid-Free-Non-Fading-Pigment-Pens-6-Pack_4b351bd8-f5fa-4b17-9e30-5f4f742ae295.55477a5a14ea90caed41f8a3ac421669.jpeg" alt="Architectural Technical Fineliner Pens" loading="lazy">
+                        <button class="quick-view-btn" data-title="Architectural Technical Fineliner Pens" data-price="340" data-cat="Writing Implements" data-img="https://i5.walmartimages.com/seo/Acurit-0-60mm-Fine-Point-Technical-Drawing-Pens-Black-Ink-for-Artists-Architects-Engineers-SmAll-Nibs-Acid-Free-Non-Fading-Pigment-Pens-6-Pack_4b351bd8-f5fa-4b17-9e30-5f4f742ae295.55477a5a14ea90caed41f8a3ac421669.jpeg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Drafting Tools</span>
+                        <h3 class="product-title">Architectural Technical Fineliner Pens</h3>
+                        <p class="product-desc">Micro-pigment waterproof archival black ink pens from 0.05mm to 0.8mm for engineering drafting and diagrams.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹340</span>
+                            <button class="order-btn" data-item="Architectural Technical Fineliner Pens" data-price="340">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 6 -->
+                <article class="product-card" data-category="art">
+                    <span class="product-badge royal">Full-Grain</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse1.explicit.bing.net/th/id/OIP.OWHIqHUzaEDhpIgwER7aQQHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Handmade Leather Pen & Tool Roll" loading="lazy">
+                        <button class="quick-view-btn" data-title="Handmade Leather Pen & Tool Roll" data-price="490" data-cat="Storage & Desk" data-img="https://tse1.explicit.bing.net/th/id/OIP.OWHIqHUzaEDhpIgwER7aQQHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Organizers</span>
+                        <h3 class="product-title">Handmade Leather Pen & Tool Roll</h3>
+                        <p class="product-desc">Vintage oiled rustic pull-up genuine leather pouch with 6 dedicated instrument slots and tie-strap closure.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹490</span>
+                            <button class="order-btn" data-item="Handmade Leather Pen & Tool Roll" data-price="490">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 7 -->
+                <article class="product-card" data-category="geometry">
+                    <span class="product-badge">Solid Brass</span>
+                    <div class="product-img-wrap">
+                        <img src="https://magnifyingglasses.co.uk/wp-content/uploads/2024/02/LD-75_paperweight_desk_dome_magnifier_finance.jpg" alt="Scholar's Desk Magnifier & Paperweight" loading="lazy">
+                        <button class="quick-view-btn" data-title="Scholar's Desk Magnifier & Paperweight" data-price="240" data-cat="Desk Accessories" data-img="https://magnifyingglasses.co.uk/wp-content/uploads/2024/02/LD-75_paperweight_desk_dome_magnifier_finance.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Desk Accessories</span>
+                        <h3 class="product-title">Scholar's Desk Magnifier & Paperweight</h3>
+                        <p class="product-desc">3X magnification optical glass lens encased in polished antique brass rim with balanced ornamental handle.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹240</span>
+                            <button class="order-btn" data-item="Scholar Desk Magnifier" data-price="240">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 8 -->
+                <article class="product-card" data-category="writing">
+                    <span class="product-badge royal">Heritage Edition</span>
+                    <div class="product-img-wrap">
+                        <img src="https://i5.walmartimages.com/seo/Antique-Feather-Dip-Pen-Kit-Retro-Feather-Fountain-Pen-Business-Gift-Supplies_9bf3ef9d-8445-423c-9c0d-a8838fd309d9.d79fc891be61accbc36f90c76014b11a.jpeg" alt="Calligraphy Dip Pen & Wax Seal Kit" loading="lazy">
+                        <button class="quick-view-btn" data-title="Calligraphy Dip Pen & Wax Seal Kit" data-price="520" data-cat="Calligraphy Tools" data-img="https://i5.walmartimages.com/seo/Antique-Feather-Dip-Pen-Kit-Retro-Feather-Fountain-Pen-Business-Gift-Supplies_9bf3ef9d-8445-423c-9c0d-a8838fd309d9.d79fc891be61accbc36f90c76014b11a.jpeg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Calligraphy</span>
+                        <h3 class="product-title">Calligraphy Dip Pen & Wax Seal Kit</h3>
+                        <p class="product-desc">Handcrafted fluted glass dip pen, 5 interchangeable steel nibs, sealing wax sticks, and engraved seal.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹520</span>
+                            <button class="order-btn" data-item="Calligraphy Dip Pen & Wax Seal Kit" data-price="520">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 9 -->
+                <article class="product-card" data-category="notebooks">
+                    <span class="product-badge">Box of 12</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.U3DilleIBTnKlD4XiLm01gHaHa?r=0&w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Triangular Graphite Drafting Pencils" loading="lazy">
+                        <button class="quick-view-btn" data-title="Triangular Graphite Drafting Pencils" data-price="160" data-cat="Drawing Tools" data-img="https://tse1.mm.bing.net/th/id/OIP.U3DilleIBTnKlD4XiLm01gHaHa?r=0&w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Pencils & Sketching</span>
+                        <h3 class="product-title">Triangular Graphite Drafting Pencils</h3>
+                        <p class="product-desc">SV-bonded break-resistant 2B graphite core with comfortable matte grip, ideal for long academic revision.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹160</span>
+                            <button class="order-btn" data-item="Triangular Drafting Pencils" data-price="160">
+                                <i class="fa-solid fa-bag-shopping"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="mainFooter">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>Stationery</span> House
+                        <small>School Books & Supplies</small>
+                    </div>
+                </a>
+                <p>
+                    Serving students, educators, and institutions with board-certified textbooks and writing supplies crafted with traditional devotion.
+                </p>
+                <div class="social-row">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Navigation</h4>
+                <a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a>
+                <a href="#books"><i class="fa-solid fa-angle-right"></i>About</a>
+                <a href="#stationery"><i class="fa-solid fa-angle-right"></i> Fine Stationery</a>
+                <a href="#school-kits"><i class="fa-solid fa-angle-right"></i> Seasonal Offers</a>
+                <a href="#offers"><i class="fa-solid fa-angle-right"></i>Contact </a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Scholastic Categories</h4>
+                <a href="#books"><i class="fa-solid fa-angle-right"></i> CBSE Textbooks</a>
+                <a href="#books"><i class="fa-solid fa-angle-right"></i> ICSE Curriculums</a>
+                <a href="#stationery"><i class="fa-solid fa-angle-right"></i> Fountain Pens</a>
+                <a href="#stationery"><i class="fa-solid fa-angle-right"></i> Brass Geometry Sets</a>
+                <a href="#stationery"><i class="fa-solid fa-angle-right"></i> Archival Notebooks</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Reach Our Desk</h4>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Badvel Bypass Road, Kadapa,<br>Andhra Pradesh, India
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 93462 54321
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    kasi@stationeryhouse.com
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <div class="container copyright-flex">
+                <p>© 2026 Stationery House. All Rights Reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 15px;">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#home" class="back-to-top" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- ================= QUICK VIEW MODAL ================= -->
+    <div class="modal" id="quickModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeQuickModal">&times;</button>
+            <div style="height: 250px; border-radius: 10px; overflow: hidden; margin-bottom: 18px; background: #e9e3d5;">
+                <img id="quickModalImg" src="" alt="Item Preview" style="height: 100%; width: 100%; object-fit: cover;">
+            </div>
+            <span class="product-cat" id="quickModalCat">Mathematics</span>
+            <h3 id="quickModalTitle" style="font-size: 22px; margin-bottom: 8px;">Product Title</h3>
+            <h4 id="quickModalPrice" style="color: var(--gold-primary); font-size: 24px; margin-bottom: 15px; font-family: 'Playfair Display', serif;">₹0</h4>
+            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 25px; line-height: 1.6;">
+                100% genuine scholastic publication and precision stationery tool certified for academic durability.
+            </p>
+            <button class="primary-btn" id="quickOrderAction" style="width: 100%; justify-content: center;">
+                Place Direct Order <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= ORDER / ENQUIRY MODAL ================= -->
+    <div class="modal" id="orderModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeOrderModal">&times;</button>
+            <span class="vintage-ornament">Direct Scholastic Desk</span>
+            <h3 style="font-size: 24px; margin-bottom: 15px;">Order Scholastic Item</h3>
+            <form id="bookOrderForm" style="display: grid; gap: 14px;">
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Selected Item</label>
+                    <input type="text" id="orderBookTitle" readonly style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-surface); color: var(--text-main); font-weight: 700;">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Student / Institution Name</label>
+                    <input type="text" id="orderName" required placeholder="e.g. Adarsh Vidyalaya" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-card); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Contact Phone</label>
+                    <input type="tel" id="orderPhone" required placeholder="+91 98765 43210" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-card); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Required Quantity</label>
+                    <input type="number" id="orderQty" min="1" value="1" required style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-card); color: var(--text-main);">
+                </div>
+                <button type="submit" class="primary-btn" style="width: 100%; justify-content: center; margin-top: 5px;">
+                    Confirm & Send Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-msg" id="toastMsg">
+        Action processed successfully ✓
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="stationery.js">
+        
+    </script>
+</body>
+</html>

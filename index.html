@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery House | School Books & Supplies</title>
+
+    <!-- Google Fonts: Heritage Serif & Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/0d7221de-f61b-4b2c-b4a9-3c72b104271d.jpg">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- TOP READING PROGRESS BAR -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="mainHeader">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                
+                <div class="logo-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <span>Stationery</span> House
+                    <small>School Books & Supplies</small>
+                </div>
+            </a>
+
+            <!-- NAVIGATION ITEMS WITH HOME DROPDOWN -->
+            <nav class="nav-links" id="navLinks">
+                <div class="nav-item has-dropdown" id="homeDropdownItem">
+                    <a href="/index.html" class="nav-link active" id="homeNavBtn" aria-expanded="false" aria-haspopup="true">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+                    </a>
+                    <div class="dropdown-menu" id="homeDropdownMenu" role="menu">
+                        <a href="/index.html" class="dropdown-item" role="menuitem">
+                            <div class="dropdown-icon">
+                                <i class="fa-solid fa-home"></i>
+                            </div>
+                            <div class="dropdown-text">
+                                <strong>Home-1</strong>
+                            </div>
+                        </a>
+                        <a href="/home2.html" class="dropdown-item" role="menuitem">
+                            <div class="dropdown-icon">
+                                <i class="fa-solid fa-home"></i>
+                            </div>
+                            <div class="dropdown-text">
+                                <strong>Home-2</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="/about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/stationery.html" class="nav-link">Stationery</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="/offers.html" class="nav-link">Offers</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/dashboard.html" class="nav-link">Dashboard</a>
+                </div>
+            </nav>
+
+            <!-- NAV ACTIONS -->
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="direction-btn" id="directionBtn" aria-label="Toggle RTL">
+                    <span>RTL</span>
+                </button>
+
+                <a href="#books" class="shop-btn">
+                    <span>Shop Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= ANIMATED HERO SLIDER (3 ANIMATED CLIP PHOTOS WITH VOLUMETRIC LIGHTING) ================= -->
+    <section class="slider-section" id="home">
+        <div class="slider-track" id="sliderTrack">
+
+            <!-- CLIP PHOTO 1 -->
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('https://wallpapercrafter.com/desktop2/857511-book-shelves-book-stack-bookcase-books-college.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="vintage-ornament">Tradition of Academic Excellence</span>
+                    <h1 class="slide-title">
+                        Pure Heritage of <span>Knowledge & Learning</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Curating certified school textbooks, curriculum guides, and authentic academic materials designed to support students from foundational grades through competitive standards.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#books" class="primary-btn">
+                            Explore Books Collection <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#school-kits" class="secondary-btn">
+                            View Ready School Kits
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIP PHOTO 2 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://myreadingvintage.com/cdn/shop/articles/hardcover_collectible_books_1600x.png?v=1716928768');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="vintage-ornament">Handcrafted Precision & Craft</span>
+                    <h1 class="slide-title">
+                        Artisan Writing Tools & <span>Fine Stationery</span>
+                    </h1>
+                    <p class="slide-desc">
+                        From classic gold-nib fountain pens and smooth cartridge rollers to durable archival student notebooks — crafted for every scholar dreaming big.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#stationery" class="primary-btn">
+                            Browse Stationery <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#offers" class="secondary-btn">
+                            Seasonal Specials
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIP PHOTO 3 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/fbadfd42195279.57c480e8998ad.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="vintage-ornament">Complete Academic Solutions</span>
+                    <h1 class="slide-title">
+                        Curated All-in-One <span>School Packages</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Tailored packages approved by educators across the state. Notebooks, mathematical geometry boxes, lab supplies, and artist essentials bundled with premium savings.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#school-kits" class="primary-btn">
+                            Discover School Kits <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="secondary-btn">
+                            School Bulk Orders
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slider Arrows -->
+        <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn slider-next" id="sliderNext" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <span class="slider-dot active" data-slide="0"></span>
+            <span class="slider-dot" data-slide="1"></span>
+            <span class="slider-dot" data-slide="2"></span>
+        </div>
+
+        <!-- HERO ANIMATED SMOOTH SCROLL DOWN BUTTON -->
+        <a href="#heritage-values" class="hero-scroll-down" aria-label="Scroll down to explore">
+            <span class="hero-scroll-label">Explore More</span>
+            <div class="mouse-icon">
+                <div class="mouse-wheel"></div>
+            </div>
+            <div class="scroll-arrows-down">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </a>
+    </section>
+
+    <!-- ================= VALUE STRIP ================= -->
+    <div class="heritage-strip" id="heritage-values">
+        <div class="container heritage-grid">
+            <div class="heritage-item reveal-element delay-1">
+                <div class="heritage-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+                <div>
+                    <strong>Authentic Editions</strong>
+                    <span>Direct publisher authorized books</span>
+                </div>
+            </div>
+            <div class="heritage-item reveal-element delay-2">
+                <div class="heritage-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                    <strong>Archival Quality</strong>
+                    <span>Premium GSM durable paper</span>
+                </div>
+            </div>
+            <div class="heritage-item reveal-element delay-3">
+                <div class="heritage-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+                <div>
+                    <strong>Institutional Bulk</strong>
+                    <span>Subsidized school kit supplies</span>
+                </div>
+            </div>
+            <div class="heritage-item reveal-element">
+                <div class="heritage-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <div>
+                    <strong>Prompt Doorstep Delivery</strong>
+                    <span>Carefully packaged with warmth</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= BOOKS SECTION ================= -->
+    <section class="section" id="books">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="vintage-ornament">Curated Academic Library</span>
+                <h2>School & Foundation Textbooks</h2>
+                <p>Authentic board-certified textbooks spanning CBSE, ICSE, and State Boards, crafted to foster critical thinking and scholarly growth.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- BOOK 1 -->
+                <article class="product-card reveal-element delay-1">
+                    <span class="product-badge royal">Class 10 CBSE</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.AHvcxhQB3a3Jr6TvTvsnKAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Advanced Mathematics Textbook">
+                        <button class="quick-view-btn" data-title="Comprehensive Mathematics Volume X" data-price="380" data-img="https://tse2.mm.bing.net/th/id/OIP.AHvcxhQB3a3Jr6TvTvsnKAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Mathematics</span>
+                        <h3 class="product-title">Comprehensive Mathematics Vol. X</h3>
+                        <p class="product-desc">In-depth mathematical concepts with worked out step-by-step solutions, board practice sets, and diagrams.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹380</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Comprehensive Mathematics Vol. X (₹380)">
+                                <i class="fa-solid fa-paper-plane"></i> Enquire
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 2 -->
+                <article class="product-card reveal-element delay-2">
+                    <span class="product-badge">Bestseller</span>
+                    <div class="product-img-wrap">
+                        <img src="https://images.sello.io/products/acc/50892/117333818/8a0437f853ac9bfb20ff8fba8707b7ff.jpg?imWidth=600" alt="Foundations of Modern Physics">
+                        <button class="quick-view-btn" data-title="Principles of Physics & Mechanics" data-price="420" data-img="https://images.sello.io/products/acc/50892/117333818/8a0437f853ac9bfb20ff8fba8707b7ff.jpg?imWidth=600">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Science</span>
+                        <h3 class="product-title">Principles of Physics & Mechanics</h3>
+                        <p class="product-desc">Classical kinematics, thermodynamics, and optics explained with vibrant illustrated figures and lab insights.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹420</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Principles of Physics & Mechanics (₹420)">
+                                <i class="fa-solid fa-paper-plane"></i> Enquire
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 3 -->
+                <article class="product-card reveal-element delay-3">
+                    <span class="product-badge">Lab Certified</span>
+                    <div class="product-img-wrap">
+                        <img src="https://mkg.com.pk/cdn/shop/files/Textbook-of-Chemistry-Class-11-by-National-Book-Foundation-Federal-Board-National-Book-Foundation-28490965.jpg?v=1743688828" alt="Chemistry Companion">
+                        <button class="quick-view-btn" data-title="Modern Chemistry & Lab Manual" data-price="390" data-img="https://mkg.com.pk/cdn/shop/files/Textbook-of-Chemistry-Class-11-by-National-Book-Foundation-Federal-Board-National-Book-Foundation-28490965.jpg?v=1743688828">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Chemistry</span>
+                        <h3 class="product-title">Modern Chemistry & Lab Manual</h3>
+                        <p class="product-desc">Covers organic synthesis, molecular bonding models, periodic trends, and safe laboratory experimentation guidelines.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹390</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Modern Chemistry & Lab Manual (₹390)">
+                                <i class="fa-solid fa-paper-plane"></i> Enquire
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HERITAGE STORY BLOCK WITH RADIANT LIGHTING ================= -->
+    <section class="story-section" id="heritage-story">
+        <div class="container story-grid">
+            <div class="story-content reveal-element">
+                <span class="vintage-ornament">The House of Heritage Supplies</span>
+                <h2>Carrying Forward the <span>Tradition of True Learning</span></h2>
+                <p>
+                    Much like the celebrated culture of historic establishments that prize authentic recipes passed through generations, Stationery House believes in unmatched devotion to scholastic craftsmanship.
+                </p>
+                <p>
+                    Every notebook binding is reinforced to withstand enthusiastic revision; every instrument is calibrated to pinpoint millimeter precision. We don't just sell pens and paper; we equip the architects of tomorrow.
+                </p>
+                <div class="story-pillars">
+                    <div class="pillar-box">
+                        <strong>100% Acid-Free Paper</strong>
+                        <p>Bleed-resistant pages designed for both fountain ink and ballpoints.</p>
+                    </div>
+                    <div class="pillar-box">
+                        <strong>Standardized Accuracy</strong>
+                        <p>Certified mathematical tools compliant with competitive exams.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-img-frame reveal-element">
+                <img src="https://koala.sh/api/image/v2-wmabr-d6u8b.jpg?width=1344&height=768&dream" alt="Vasini Library Stationery">
+                <div class="stamp-badge">
+                    <span>ESTD. 1984</span>
+                    <span>TRADITION</span>
+                    <span>OF EXCELLENCE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= STATIONERY SECTION ================= -->
+    <section class="section" id="stationery">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="vintage-ornament">Craftsmanship In Every Stroke</span>
+                <h2>Fine Stationery & Scholastic Tools</h2>
+                <p>Curated writing implements, durable paper goods, precision instruments, and art gear manufactured for lifelong scholars.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- STATIONERY 1 -->
+                <article class="product-card reveal-element delay-1">
+                    <span class="product-badge royal">Royal Sovereign</span>
+                    <div class="product-img-wrap">
+                        <img src="https://www.submarinepens.com/cdn/shop/files/1551_FP__7.jpg?v=1774087360" alt="Royal Fountain Pen Set">
+                        <button class="quick-view-btn" data-title="Royal Sovereign Fountain Pen Set" data-price="350" data-img="https://www.submarinepens.com/cdn/shop/files/1551_FP__7.jpg?v=1774087360">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Writing Tools</span>
+                        <h3 class="product-title">Royal Sovereign Fountain Pen Set</h3>
+                        <p class="product-desc">Gold-tipped iridium nib with refillable ink converter and twin bottles of deep royal blue ink.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹350</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Royal Sovereign Fountain Pen Set (₹350)">
+                                <i class="fa-solid fa-paper-plane"></i> Enquire
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 2 -->
+                <article class="product-card reveal-element delay-2">
+                    <span class="product-badge">Pack of 3</span>
+                    <div class="product-img-wrap">
+                        <img src="https://s.alicdn.com/@sc04/kf/H26710621f1c64cedb6394034ec3a13e7u.jpg_720x720q50.jpg" alt="Hardbound Ruled Notebooks">
+                        <button class="quick-view-btn" data-title="Hardbound Ruled Journals (Pack of 3)" data-price="280" data-img="https://s.alicdn.com/@sc04/kf/H26710621f1c64cedb6394034ec3a13e7u.jpg_720x720q50.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Notebooks</span>
+                        <h3 class="product-title">Hardbound Ruled Journals (Pack of 3)</h3>
+                        <p class="product-desc">100 GSM creamy parchment pages with reinforced cloth spine and ribbon bookmark for daily lectures.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹280</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Hardbound Ruled Journals Pack of 3 (₹280)">
+                                <i class="fa-solid fa-paper-plane"></i> Enquire
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STATIONERY 3 -->
+                <article class="product-card reveal-element delay-3">
+                    <span class="product-badge royal">Precision Brass</span>
+                    <div class="product-img-wrap">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2026/2/581031493/RZ/RP/RV/1986103/premium-geometry-box-1000x1000.jpg" alt="Brass Geometry Box">
+                        <button class="quick-view-btn" data-title="Master Precision Brass Geometry Box" data-price="120" data-img="https://5.imimg.com/data5/SELLER/Default/2026/2/581031493/RZ/RP/RV/1986103/premium-geometry-box-1000x1000.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Geometry Tools</span>
+                        <h3 class="product-title">Master Precision Brass Geometry Box</h3>
+                        <p class="product-desc">All-metal heavy duty compass, divider, protractor, set squares, and engraved stainless scale.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹120</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Master Precision Brass Geometry Box (₹120)">
+                                <i class="fa-solid fa-paper-plane"></i> Enquire
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SCHOOL KITS SECTION ================= -->
+    <section class="section" id="school-kits" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="vintage-ornament">All In One Simplicity</span>
+                <h2>Complete School Supply Kits</h2>
+                <p>Designed in consultation with leading school educators to eliminate the hassle of multi-store shopping.</p>
+            </div>
+
+            <div class="kit-grid">
+
+                <!-- KIT 1 -->
+                <div class="kit-card reveal-element delay-1">
+                    <div class="kit-icon"><i class="fa-solid fa-child"></i></div>
+                    <h3>Primary Scholar Kit</h3>
+                    <p class="kit-desc">Perfected for elementary grades (Classes 1–5).</p>
+                    <ul class="kit-list">
+                        <li><i class="fa-solid fa-check"></i> 6 Four-Line & Square Rule Notebooks</li>
+                        <li><i class="fa-solid fa-check"></i> Non-Toxic Wax Crayon Palette (16 shades)</li>
+                        <li><i class="fa-solid fa-check"></i> Ergonomic Triangular Grip Pencils (Set of 10)</li>
+                        <li><i class="fa-solid fa-check"></i> Dust-Free Erasers & Metal Sharpener</li>
+                        <li><i class="fa-solid fa-check"></i> Water-Resistant Book Cover Rolls + Labels</li>
+                    </ul>
+                    <div class="kit-price">₹699</div>
+                    <button class="primary-btn open-enquiry" data-item="Primary Scholar Kit (₹699)" style="width: 100%; justify-content: center;">
+                        Enquire For Kit
+                    </button>
+                </div>
+
+                <!-- KIT 2 -->
+                <div class="kit-card signature reveal-element delay-2">
+                    <span class="popular-tag">MOST POPULAR</span>
+                    <div class="kit-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3>High School Royal Kit</h3>
+                    <p class="kit-desc">The flagship package for grades 6–10.</p>
+                    <ul class="kit-list">
+                        <li><i class="fa-solid fa-check"></i> 10 Long Broad-Rule 180-Page Notebooks</li>
+                        <li><i class="fa-solid fa-check"></i> Master Brass Geometry Box with Compass</li>
+                        <li><i class="fa-solid fa-check"></i> 5 Rollerball Blue & Black Pens + Highlighter</li>
+                        <li><i class="fa-solid fa-check"></i> Graph Pad & Scientific Project Sheets</li>
+                        <li><i class="fa-solid fa-check"></i> Hardcover Daily Academic Planner</li>
+                    </ul>
+                    <div class="kit-price">₹999</div>
+                    <button class="primary-btn open-enquiry" data-item="High School Royal Kit (₹999)" style="width: 100%; justify-content: center;">
+                        Enquire For Kit
+                    </button>
+                </div>
+
+                <!-- KIT 3 -->
+                <div class="kit-card reveal-element delay-3">
+                    <div class="kit-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>College & Aspirant Kit</h3>
+                    <p class="kit-desc">Engineered for collegiate and competitive exams.</p>
+                    <ul class="kit-list">
+                        <li><i class="fa-solid fa-check"></i> 5 Spiral Five-Subject Ruled Registers</li>
+                        <li><i class="fa-solid fa-check"></i> Precision Drafting Fineliner Pens (0.5mm)</li>
+                        <li><i class="fa-solid fa-check"></i> Sticky Note Flags & Memo Sticky Pad Set</li>
+                        <li><i class="fa-solid fa-check"></i> Transparent Document Folder Portfolio</li>
+                        <li><i class="fa-solid fa-check"></i> 30cm Flexible Shatterproof Scale</li>
+                    </ul>
+                    <div class="kit-price">₹849</div>
+                    <button class="primary-btn open-enquiry" data-item="College & Aspirant Kit (₹849)" style="width: 100%; justify-content: center;">
+                        Enquire For Kit
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SEASONAL OFFERS ================= -->
+    <section class="offer-section" id="offers">
+        <div class="container">
+            <div class="offer-banner reveal-element">
+                <div class="offer-info">
+                    <span class="vintage-ornament" style="color: var(--gold-light);">Limited Time Academic Offer</span>
+                    <h2>Enjoy Flat <span>20% Off</span> on All Curated School Kits</h2>
+                    <p>Prepare for the upcoming school academic term with early-bird family savings. Bulk school discounts automatically applied on institutional enquiries.</p>
+                    <div style="margin-top: 25px;">
+                        <a href="#school-kits" class="primary-btn">
+                            Claim 20% Discount <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="vintage-ornament">Echoes of Gratitude</span>
+                <h2>Words From Parents & Scholars</h2>
+                <p>Generations of families and teachers who entrust their scholastic journey to Stationery House.</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal-element delay-1">
+                    <div class="stars">★★★★★</div>
+                    <p>"Stationery House delivers notebooks and school books that never disappoint. Paper quality is sturdy, bleed-free, and dependable!"</p>
+                    <strong>Dharshini</strong>
+                    <small>High School Parent</small>
+                </div>
+
+                <div class="testimonial-card reveal-element delay-2">
+                    <div class="stars">★★★★★</div>
+                    <p>"The High School kit saved my family 4 trips to the market. The brass geometry box and ruled notebooks are top notch. Prompt and helpful service."</p>
+                    <strong>Priya</strong>
+                    <small>Class 10 Student</small>
+                </div>
+
+                <div class="testimonial-card reveal-element delay-3">
+                    <div class="stars">★★★★★</div>
+                    <p>"We procured 450 school kits for our batch in Kadapa. The customized packaging, punctuality, and friendly support make Stationery House our permanent academic partner."</p>
+                    <strong>Vasini</strong>
+                    <small>School Principal & Trustee</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="section" id="contact" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-box reveal-element">
+                <div>
+                    <span class="vintage-ornament" style="color: var(--gold-light);">Let Us Assist You</span>
+                    <h2>Equip Your Students For Greatness</h2>
+                    <p>Have an inquiry for custom book bundles, school supply lists, or bulk wholesale consignments? Reach out directly to our desk.</p>
+                </div>
+                <button class="primary-btn" id="openContactModal">
+                    Send Enquiry <i class="fa-solid fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="mainFooter">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>Stationery</span> House
+                        <small>School Books & Supplies</small>
+                    </div>
+                </a>
+                <p>
+                    Serving students, educators, and schools with genuine textbooks, fine writing stationery, and complete kits crafted with royal dedication.
+                </p>
+                <div class="social-row">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a>
+                <a href="#books"><i class="fa-solid fa-angle-right"></i> About</a>
+                <a href="#stationery"><i class="fa-solid fa-angle-right"></i> Fine Stationery</a>
+                <a href="#school-kits"><i class="fa-solid fa-angle-right"></i> Offers</a>
+                <a href="#offers"><i class="fa-solid fa-angle-right"></i> Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <a href="#books"><i class="fa-solid fa-angle-right"></i> CBSE Textbooks</a>
+                <a href="#books"><i class="fa-solid fa-angle-right"></i> ICSE Guides</a>
+                <a href="#stationery"><i class="fa-solid fa-angle-right"></i> Fountain Pens</a>
+                <a href="#stationery"><i class="fa-solid fa-angle-right"></i> Geometry Boxes</a>
+                <a href="#stationery"><i class="fa-solid fa-angle-right"></i> Artist Kits</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Reach Our Desk</h4>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Badvel Bypass Road, Kadapa,<br>Andhra Pradesh, India
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 93462 54321
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    kasi@stationeryhouse.com
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <div class="container copyright-flex">
+                <p>© 2026 Stationery House. All Rights Reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 15px;">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- ================= QUICK VIEW MODAL ================= -->
+    <div class="modal" id="quickModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeQuickModal">&times;</button>
+            <div style="height: 240px; border-radius: 10px; overflow: hidden; margin-bottom: 18px; position: relative;">
+                <img id="quickModalImg" src="" alt="Product Preview" style="height: 100%; width: 100%; object-fit: cover;">
+            </div>
+            <h3 id="quickModalTitle" style="font-size: 22px; margin-bottom: 8px;">Product Title</h3>
+            <h4 id="quickModalPrice" style="color: var(--gold-primary); font-size: 22px; margin-bottom: 15px;">₹0</h4>
+            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 25px;">
+                Premium quality scholastic supply authorized by Stationery House. Built with high durability standards to enrich student learning.
+            </p>
+            <button class="primary-btn" id="quickModalEnquireBtn" style="width: 100%; justify-content: center;">
+                Enquire About This Item <i class="fa-solid fa-envelope" style="margin-left: 8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= CONTACT MODAL ================= -->
+    <div class="modal" id="contactModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeContactModal">&times;</button>
+            <span class="vintage-ornament">Direct Institutional Desk</span>
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Send Academic Enquiry</h3>
+            <form id="enquiryForm" style="display: grid; gap: 15px;">
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Your Name / Institution</label>
+                    <input type="text" id="contactName" required placeholder="e.g. Hyderabad Public School" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Email Address</label>
+                    <input type="email" id="contactEmail" required placeholder="principal@institution.org" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Contact Phone</label>
+                    <input type="tel" id="contactPhone" required placeholder="+91 98765 43210" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Enquiry Type</label>
+                    <select id="contactType" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                        <option>Curated School Kits Bulk Order</option>
+                        <option>Board Textbooks Requirement</option>
+                        <option>Artisan Stationery Supply</option>
+                        <option>Custom Institutional Request</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Requirements / Selected Item</label>
+                    <textarea id="contactMsg" rows="3" required placeholder="Describe quantity and required delivery dates..." style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);"></textarea>
+                </div>
+                <button type="submit" class="primary-btn" style="width: 100%; justify-content: center; margin-top: 5px;">
+                    Submit Enquiry
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-msg" id="toastMsg">
+        Action completed successfully ✓
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="index.js"></script>
+</body>
+</html>

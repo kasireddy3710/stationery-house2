@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers & Seasonal Deals | Stationery House</title>
+
+    <!-- Google Fonts: Heritage Serif & Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/0d7221de-f61b-4b2c-b4a9-3c72b104271d.jpg">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="offers.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <span>Stationery</span> House
+                    <small>School Books & Supplies</small>
+                </div>
+            </a>
+
+            <!-- NAVIGATION ITEMS -->
+            <nav class="nav-links" id="navLinks">
+                
+                <!-- HOME DROPDOWN -->
+                <div class="nav-item has-dropdown" id="homeDropdown">
+                    <a href="/index.html" class="nav-link" id="homeToggle" aria-haspopup="true" aria-expanded="false">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Home Navigation Links">
+                        <li>
+                            <a href="/index.html" class="dropdown-item">
+                                <i class="fa-solid fa-home"></i>
+                                <div class="item-texts">
+                                    <strong>Home-1</strong>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/home2.html" class="dropdown-item">
+                                <i class="fa-solid fa-home"></i>
+                                <div class="item-texts">
+                                    <strong>Home-2</strong>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="nav-item">
+                    <a href="/about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/stationery.html" class="nav-link">Stationery</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="/offers.html" class="nav-link active">Offers</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/dashboard.html" class="nav-link">Dashboard</a>
+                </div>
+            </nav>
+
+            <!-- NAV ACTIONS -->
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="direction-btn" id="directionBtn" aria-label="Toggle RTL">
+                    <span>RTL</span>
+                </button>
+
+                <a href="#special-offers" class="shop-btn">
+                    <span>Shop Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= 5-CLIP ANIMATED PROMO SLIDER ================= -->
+    <section class="slider-section" id="offers">
+        <div class="slider-track" id="sliderTrack">
+
+            <!-- SLIDE 1: Back to School Mega Fest -->
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/043/033/446/small_2x/close-up-of-a-weathered-old-book-with-wildflowers-growing-from-its-spine-photo.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="offer-tag-banner">Up To 35% Off</span><br>
+                    <span class="vintage-ornament">Curated Academic Library</span>
+                    <h1 class="slide-title">
+                        Academic Term <span>Textbook Carnival</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Enjoy deep discounts on board-certified CBSE, ICSE, and State Syllabus textbooks. Save on comprehensive reference bundles and foundation question banks.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#special-offers" class="primary-btn">
+                            Browse Discounted Books <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2: School Bags Special -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.HRE8Sj1RQ1mBzAmUmTGL0AHaE7?r=0&w=626&h=417&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="offer-tag-banner">Flat 25% Off</span><br>
+                    <span class="vintage-ornament">Ergonomic Comfort</span>
+                    <h1 class="slide-title">
+                        Heavy-Duty <span>Scholar Backpacks</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Reinforced stitch, waterproof canvas, and cushioned orthopedic spinal supports designed to effortlessly bear heavy academic loads.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#special-offers" class="primary-btn">
+                            Explore Bag Offers <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3: Signature Pens -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://th.bing.com/th/id/OIP.BapQtsF-DyBhceUCqQMJgAHaE7?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="offer-tag-banner">Buy 2 Get 1 Free</span><br>
+                    <span class="vintage-ornament">Craftsmanship in Every Stroke</span>
+                    <h1 class="slide-title">
+                        Artisan Writing <span>Pen Sets</span>
+                    </h1>
+                    <p class="slide-desc">
+                        From 24K gold-plated nib fountain pens to smooth micro-tip executive rollers, elevate every handwritten manuscript with regal elegance.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#special-offers" class="primary-btn">
+                            Claim Pen Offers <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+        <!-- Slider Arrows -->
+        <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn slider-next" id="sliderNext" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <span class="slider-dot active" data-slide="0"></span>
+            <span class="slider-dot" data-slide="1"></span>
+            <span class="slider-dot" data-slide="2"></span>
+            
+        </div>
+    </section>
+
+    <!-- ================= VOUCHER CODES STRIP ================= -->
+    <div class="voucher-bar">
+        <div class="container voucher-grid">
+            <div class="voucher-card">
+                <div class="voucher-info">
+                    <strong>SCHOLAR20</strong>
+                    <span>Flat 20% off all school textbook orders</span>
+                </div>
+                <button class="voucher-code copy-code" data-code="SCHOLAR20">
+                    <i class="fa-regular fa-copy"></i> Copy
+                </button>
+            </div>
+            <div class="voucher-card">
+                <div class="voucher-info">
+                    <strong>BAGSFREE</strong>
+                    <span>Get ₹200 off ergonomic school backpacks</span>
+                </div>
+                <button class="voucher-code copy-code" data-code="BAGSFREE">
+                    <i class="fa-regular fa-copy"></i> Copy
+                </button>
+            </div>
+            <div class="voucher-card">
+                <div class="voucher-info">
+                    <strong>ARTGUILD</strong>
+                    <span>Extra 15% off fine art & geometry sets</span>
+                </div>
+                <button class="voucher-code copy-code" data-code="ARTGUILD">
+                    <i class="fa-regular fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= 15 OFFER ITEMS (3 EACH CATEGORY) ================= -->
+    <section class="section" id="special-offers">
+        <div class="container">
+            <div class="section-header">
+                <span class="vintage-ornament">Curated Academic Discounts</span>
+                <h2>Exclusive Season Specials</h2>
+                <p>Limited-time discounted prices on school curriculum books, durable luggage, writing pens, geometry gear, and fine art supplies.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-wrapper">
+                <button class="filter-tab active" data-filter="all">All Deals (15)</button>
+                <button class="filter-tab" data-filter="books">School Books (3)</button>
+                <button class="filter-tab" data-filter="bags">School Bags (3)</button>
+                <button class="filter-tab" data-filter="pens">Pen Sets (3)</button>
+                <button class="filter-tab" data-filter="geometry">Geometry Boxes (3)</button>
+                <button class="filter-tab" data-filter="arts">Color Arts (3)</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <!-- 1. BOOKS - Item 1 -->
+                <article class="product-card" data-category="books">
+                    <span class="discount-badge">25% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://www.kepler-act.com/wp-content/uploads/2025/12/1765100395-1024x944.png" alt="Comprehensive Mathematics Vol X">
+                        <button class="quick-view-btn" data-title="Comprehensive Mathematics Vol. X" data-price="285" data-img="https://www.kepler-act.com/wp-content/uploads/2025/12/1765100395-1024x944.png">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">School Books</span>
+                        <h3 class="product-title">Comprehensive Mathematics Vol. X</h3>
+                        <p class="product-desc">Board exam oriented solved equations, formulas, and past ten-year papers.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹285</span>
+                                <span class="old-price">₹380</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Comprehensive Mathematics Vol. X">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 1. BOOKS - Item 2 -->
+                <article class="product-card" data-category="books">
+                    <span class="discount-badge">20% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://media.karousell.com/media/photos/products/2024/10/7/principles_of_physics_10ed_int_1728264463_0060d519_progressive.jpg" alt="Principles of Physics & Mechanics">
+                        <button class="quick-view-btn" data-title="Principles of Physics & Mechanics" data-price="336" data-img="https://media.karousell.com/media/photos/products/2024/10/7/principles_of_physics_10ed_int_1728264463_0060d519_progressive.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">School Books</span>
+                        <h3 class="product-title">Principles of Physics & Mechanics</h3>
+                        <p class="product-desc">Kinematics, thermodynamics, and optics with color plates and practical lab guides.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹336</span>
+                                <span class="old-price">₹420</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Principles of Physics & Mechanics">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 1. BOOKS - Item 3 -->
+                <article class="product-card" data-category="books">
+                    <span class="discount-badge">30% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.Q_e2B-_X5oCu9X_RBJyHYAHaHm?r=0&w=1080&h=1109&rs=1&pid=ImgDetMain&o=7&rm=3" alt="World History & Civilization Atlas">
+                        <button class="quick-view-btn" data-title="World History & Civilization Atlas" data-price="238" data-img="https://tse3.mm.bing.net/th/id/OIP.Q_e2B-_X5oCu9X_RBJyHYAHaHm?r=0&w=1080&h=1109&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">School Books</span>
+                        <h3 class="product-title">World History & Civilization Atlas</h3>
+                        <p class="product-desc">Full-color geopolitical maps, timeline summaries, and chronological historical accounts.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹238</span>
+                                <span class="old-price">₹340</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="World History & Civilization Atlas">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. SCHOOL BAGS - Item 1 -->
+                <article class="product-card" data-category="bags">
+                    <span class="discount-badge">30% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.ieznWEPItIXquVhA200OxQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Heavy-Duty Canvas Backpack">
+                        <button class="quick-view-btn" data-title="Heavy-Duty Canvas Scholar Backpack" data-price="623" data-img="https://tse2.mm.bing.net/th/id/OIP.ieznWEPItIXquVhA200OxQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">School Bags</span>
+                        <h3 class="product-title">Heavy-Duty Canvas Scholar Backpack</h3>
+                        <p class="product-desc">Multi-tier book organizer, waterproof rain lining, and triple padded shoulder strap.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹623</span>
+                                <span class="old-price">₹890</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Heavy-Duty Canvas Scholar Backpack">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. SCHOOL BAGS - Item 2 -->
+                <article class="product-card" data-category="bags">
+                    <span class="discount-badge">20% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.6skDIPIDsM5Ut5iWe9yauAHaHa?r=0&w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Oxford Classic Scholar Bag">
+                        <button class="quick-view-btn" data-title="Oxford Classic Scholar Bag" data-price="760" data-img="https://tse4.mm.bing.net/th/id/OIP.6skDIPIDsM5Ut5iWe9yauAHaHa?r=0&w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">School Bags</span>
+                        <h3 class="product-title">Oxford Classic Scholar Bag</h3>
+                        <p class="product-desc">Reinforced ballistic weave nylon, reflective safety strips, and water bottle slots.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹760</span>
+                                <span class="old-price">₹950</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Oxford Classic Scholar Bag">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. SCHOOL BAGS - Item 3 -->
+                <article class="product-card" data-category="bags">
+                    <span class="discount-badge">35% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://www.panwaydesign.com/storage/uploads/images/202504/11/1744356062_0pbHnLrGxp.jpg" alt="Junior Orthopedic School Bag">
+                        <button class="quick-view-btn" data-title="Junior Orthopedic School Bag" data-price="487" data-img="https://www.panwaydesign.com/storage/uploads/images/202504/11/1744356062_0pbHnLrGxp.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">School Bags</span>
+                        <h3 class="product-title">Junior Orthopedic School Bag</h3>
+                        <p class="product-desc">Ultra-light frame with curved lumbar support cushioning designed for elementary grades.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹487</span>
+                                <span class="old-price">₹750</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Junior Orthopedic School Bag">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. PEN SETS - Item 1 -->
+                <article class="product-card" data-category="pens">
+                    <span class="discount-badge">BUY 1 GET 1</span>
+                    <div class="product-img-wrap">
+                        <img src="https://cdn11.bigcommerce.com/s-5ko0zosub2/product_images/description/sheaffer/imp_sov_dc13_1.jpg" alt="Royal Sovereign Gold-Nib Pen">
+                        <button class="quick-view-btn" data-title="Royal Sovereign Fountain Pen Set" data-price="280" data-img="https://cdn11.bigcommerce.com/s-5ko0zosub2/product_images/description/sheaffer/imp_sov_dc13_1.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Pen Sets</span>
+                        <h3 class="product-title">Royal Sovereign Fountain Pen Set</h3>
+                        <p class="product-desc">Gold-tipped iridium nib, smooth ink converter, and blue royal ink refill reservoir.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹280</span>
+                                <span class="old-price">₹350</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Royal Sovereign Fountain Pen Set">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. PEN SETS - Item 2 -->
+                <article class="product-card" data-category="pens">
+                    <span class="discount-badge">20% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://cdn.skapamer.com/img/b6/34/22/75/600x600/b6342275b1fea0f4636f890be51e16ec25.jpg" alt="Archival Rollerball Pen Tri-Pack">
+                        <button class="quick-view-btn" data-title="Archival Rollerball Pen Tri-Pack" data-price="199" data-img="https://cdn.skapamer.com/img/b6/34/22/75/600x600/b6342275b1fea0f4636f890be51e16ec25.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Pen Sets</span>
+                        <h3 class="product-title">Archival Rollerball Pen Tri-Pack</h3>
+                        <p class="product-desc">Smudge-proof quick-drying liquid gel ink pens tailored for rapid examination writing.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹199</span>
+                                <span class="old-price">₹250</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Archival Rollerball Pen Tri-Pack">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. PEN SETS - Item 3 -->
+                <article class="product-card" data-category="pens">
+                    <span class="discount-badge">25% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://i.pinimg.com/originals/a5/44/ae/a544ae00cb539674f6eb7460a64b2d7a.jpg" alt="Calligraphy Dip Pen Kit">
+                        <button class="quick-view-btn" data-title="Traditional Calligraphy Dip Pen Set" data-price="299" data-img="https://i.pinimg.com/originals/a5/44/ae/a544ae00cb539674f6eb7460a64b2d7a.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Pen Sets</span>
+                        <h3 class="product-title">Traditional Calligraphy Dip Pen Set</h3>
+                        <p class="product-desc">5 assorted vintage stainless nibs, hand-carved wooden handle, and deep walnut ink.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹299</span>
+                                <span class="old-price">₹399</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Traditional Calligraphy Dip Pen Set">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. GEOMETRY BOXES - Item 1 -->
+                <article class="product-card" data-category="geometry">
+                    <span class="discount-badge">FLAT ₹50 OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2024/3/399131368/OZ/GR/OD/197076/jometry-box2-1000x1000.jpg" alt="Master Brass Geometry Box">
+                        <button class="quick-view-btn" data-title="Master Solid Brass Geometry Box" data-price="120" data-img="https://5.imimg.com/data5/SELLER/Default/2024/3/399131368/OZ/GR/OD/197076/jometry-box2-1000x1000.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Geometry Boxes</span>
+                        <h3 class="product-title">Master Solid Brass Geometry Box</h3>
+                        <p class="product-desc">Heavy-duty compass, precision divider, protractor, and non-scratch metal ruler.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹120</span>
+                                <span class="old-price">₹220</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Master Solid Brass Geometry Box">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. GEOMETRY BOXES - Item 2 -->
+                <article class="product-card" data-category="geometry">
+                    <span class="discount-badge">30% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://www.inzoneuae.com/public/uploads/all/pAlqbXtvqiARZlsSCoYTDvvRCuwt9RX0y89E6GJl.png" alt="Technical Drafter Mathematical Tin">
+                        <button class="quick-view-btn" data-title="Technical Drafter Mathematical Tin" data-price="182" data-img="https://www.inzoneuae.com/public/uploads/all/pAlqbXtvqiARZlsSCoYTDvvRCuwt9RX0y89E6GJl.png">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Geometry Boxes</span>
+                        <h3 class="product-title">Technical Drafter Mathematical Tin</h3>
+                        <p class="product-desc">Precision screw compass, micro-adjustment wheel, set squares, and lead refills.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹182</span>
+                                <span class="old-price">₹260</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Technical Drafter Mathematical Tin">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. GEOMETRY BOXES - Item 3 -->
+                <article class="product-card" data-category="geometry">
+                    <span class="discount-badge">20% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://m.media-amazon.com/images/I/71QjqOpFSKL.jpg" alt="Stainless Anti-Rust Geometry Kit">
+                        <button class="quick-view-btn" data-title="Stainless Anti-Rust Geometry Kit" data-price="152" data-img="https://m.media-amazon.com/images/I/71QjqOpFSKL.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Geometry Boxes</span>
+                        <h3 class="product-title">Stainless Anti-Rust Geometry Kit</h3>
+                        <p class="product-desc">Chrome-finished anti-oxidation drafting instruments in an embossed metal tin.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹152</span>
+                                <span class="old-price">₹190</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Stainless Anti-Rust Geometry Kit">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. COLOR ARTS - Item 1 -->
+                <article class="product-card" data-category="arts">
+                    <span class="discount-badge">25% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://static-01.daraz.com.bd/p/fa73080e44a89824d5ed407aa11cb945.jpg" alt="Artist 36 Watercolor Cake Palette">
+                        <button class="quick-view-btn" data-title="Artist 36 Watercolor Cake Palette" data-price="345" data-img="https://static-01.daraz.com.bd/p/fa73080e44a89824d5ed407aa11cb945.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Color Arts</span>
+                        <h3 class="product-title">Artist 36 Watercolor Cake Palette</h3>
+                        <p class="product-desc">Pure mineral pigments with water-reservoir blending brush and mixing wells.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹345</span>
+                                <span class="old-price">₹460</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Artist 36 Watercolor Cake Palette">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. COLOR ARTS - Item 2 -->
+                <article class="product-card" data-category="arts">
+                    <span class="discount-badge">30% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://down-sg.img.susercontent.com/file/th-11134207-7ras8-m33ij7rcwa7hd0" alt="72 Soft Core Colored Pencils">
+                        <button class="quick-view-btn" data-title="72 Soft Core Colored Pencils Tin" data-price="419" data-img="https://down-sg.img.susercontent.com/file/th-11134207-7ras8-m33ij7rcwa7hd0">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Color Arts</span>
+                        <h3 class="product-title">72 Soft Core Colored Pencils Tin</h3>
+                        <p class="product-desc">Velvety smooth pigment cores for rich shading, layering, and realistic botanical art.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹419</span>
+                                <span class="old-price">₹599</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="72 Soft Core Colored Pencils Tin">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. COLOR ARTS - Item 3 -->
+                <article class="product-card" data-category="arts">
+                    <span class="discount-badge">20% OFF</span>
+                    <div class="product-img-wrap">
+                        <img src="https://canvazo.com/cdn/shop/products/Canvazo-Watercolour-Paper-100_-Cotton-Cold-Pressed-250-GSM-Canvazo-1670328976.jpg?v=1670328977" alt="Cotton Cold-Press Watercolor Pad">
+                        <button class="quick-view-btn" data-title="Cotton Cold-Press Watercolor Pad (300 GSM)" data-price="256" data-img="https://canvazo.com/cdn/shop/products/Canvazo-Watercolour-Paper-100_-Cotton-Cold-Pressed-250-GSM-Canvazo-1670328976.jpg?v=1670328977">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Color Arts</span>
+                        <h3 class="product-title">Cotton Cold-Press Watercolor Pad (300 GSM)</h3>
+                        <p class="product-desc">Acid-free heavy weight textured paper designed for watercolor washes and gouache.</p>
+                        <div class="product-footer">
+                            <div class="price-box">
+                                <span class="product-price">₹256</span>
+                                <span class="old-price">₹320</span>
+                            </div>
+                            <button class="deal-btn claim-offer" data-title="Cotton Cold-Press Watercolor Pad (300 GSM)">
+                                <i class="fa-solid fa-tag"></i> Claim Deal
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="/index.html#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>Stationery</span> House
+                        <small>School Books & Supplies</small>
+                    </div>
+                </a>
+                <p>
+                    Serving students, educators, and schools with genuine textbooks, fine writing stationery, and complete kits crafted with royal dedication.
+                </p>
+                <div class="social-row">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="/index.html#home"><i class="fa-solid fa-angle-right"></i> Home</a>
+                <a href="/index.html#books"><i class="fa-solid fa-angle-right"></i> About</a>
+                <a href="/index.html#stationery"><i class="fa-solid fa-angle-right"></i> Fine Stationery</a>
+                <a href="/index.html#offers"><i class="fa-solid fa-angle-right"></i> Seasonal Offers</a>
+                <a href="/offers.html"><i class="fa-solid fa-angle-right"></i> Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <a href="#special-offers"><i class="fa-solid fa-angle-right"></i> Discounted Books</a>
+                <a href="#special-offers"><i class="fa-solid fa-angle-right"></i> Ergonomic Bags</a>
+                <a href="#special-offers"><i class="fa-solid fa-angle-right"></i> Fountain Pen Sets</a>
+                <a href="#special-offers"><i class="fa-solid fa-angle-right"></i> Brass Geometry Kits</a>
+                <a href="#special-offers"><i class="fa-solid fa-angle-right"></i> Fine Art Colors</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Reach Our Desk</h4>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Badvel Bypass Road, Kadapa,<br>Andhra Pradesh, India
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 93462 54321
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    kasi@stationeryhouse.com
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <div class="container copyright-flex">
+                <p>© 2026 Stationery House. All Rights Reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 15px;">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#offers" class="back-to-top" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- QUICK VIEW MODAL -->
+    <div class="modal" id="quickModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeQuickModal">&times;</button>
+            <div style="height: 240px; border-radius: 10px; overflow: hidden; margin-bottom: 18px;">
+                <img id="quickModalImg" src="" alt="Product Preview" style="height: 100%; width: 100%; object-fit: cover;">
+            </div>
+            <h3 id="quickModalTitle" style="font-size: 22px; margin-bottom: 8px;">Product Title</h3>
+            <h4 id="quickModalPrice" style="color: var(--gold-primary); font-size: 22px; margin-bottom: 15px;">₹0</h4>
+            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 25px;">
+                Specially marked down for the academic seasonal festival. Authenticity and certified quality guaranteed by Stationery House.
+            </p>
+            <button class="primary-btn" id="modalClaimBtn" style="width: 100%; justify-content: center;">
+                Avail Special Offer Deal
+            </button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-msg" id="toastMsg">
+        Discount applied successfully!
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="offers.js">
+        
+        
+    </script>
+</body>
+</html>

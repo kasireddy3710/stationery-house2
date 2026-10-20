@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-2 | Stationery House</title>
+
+    <!-- Google Fonts: Heritage Serif & Clean Modern Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/0d7221de-f61b-4b2c-b4a9-3c72b104271d.jpg">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="home2.css">
+</head>
+
+<body>
+
+    <!-- TOP READING PROGRESS BAR -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="mainHeader">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <span>Stationery</span> House
+                    <small>School Books & Supplies</small>
+                </div>
+            </a>
+
+            <!-- NAV LINKS: Home (Dropdown), About, Stationery, Salon, Offers, Contact, Dashboard -->
+            <nav class="nav-links" id="navLinks">
+                <div class="nav-item has-dropdown" id="homeDropdownItem">
+                    <a href="/home2.html" class="nav-link active" id="homeNavBtn" aria-expanded="false" aria-haspopup="true">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+                    </a>
+                    <div class="dropdown-menu" id="homeDropdownMenu" role="menu">
+                        <a href="/index.html" class="dropdown-item" role="menuitem">
+                            <div class="dropdown-icon"><i class="fa-solid fa-home"></i></div>
+                            <div class="dropdown-text">
+                                <strong>Home-1</strong>
+                                
+                            </div>
+                        </a>
+                        <a href="/home2.html" class="dropdown-item active" role="menuitem">
+                            <div class="dropdown-icon"><i class="fa-solid fa-home"></i></div>
+                            <div class="dropdown-text">
+                                <strong>Home-2</strong>
+                                
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="/about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/stationery.html" class="nav-link">Stationery</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="/offers.html" class="nav-link">Offers</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/dashboard.html" class="nav-link">Dashboard</a>
+                </div>
+            </nav>
+
+            <!-- NAV ACTIONS: THEME, RTL, SHOP NOW, MOBILE HAMBURGER -->
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="direction-btn" id="directionBtn" aria-label="Toggle Direction">
+                    <span>RTL</span>
+                </button>
+
+                <a href="#curated-reads" class="shop-btn">
+                    <span>Shop Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= 3-CLIP HERO SLIDER: THE SHELF EXPERIENCE ================= -->
+    <section class="slider-section" id="home">
+        <div class="slider-track" id="sliderTrack">
+
+            <!-- CLIP 1: Antiquarian Reads & Literary Fiction -->
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('https://image.slidesdocs.com/responsive-images/background/book-and-branches-on-illuminated-textural-powerpoint-background_210949bcd3__960_540.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="vintage-ornament">The Independent Reader's Haven</span>
+                    <h1 class="slide-title">
+                        Tactile Pleasure of <span>Deckle-Edge Volumes</span>
+                        
+                    </h1>
+                    <p class="slide-desc">
+                        A slow-reading sanctuary housing rare clothbound hardcovers, translated literary wonders, and award-winning contemporary prose selected one title at a time.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#curated-reads" class="primary-btn">
+                            Browse The Shelf <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="secondary-btn">
+                            Our Curatorial Story
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIP 2: Artisan Desk & Poetry Salon -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.eudz-IphkZGqvY_-qbmmswHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="vintage-ornament">Fine Bookbinding & Author Editions</span>
+                    <h1 class="slide-title">
+                        Immerse In Stories That <span>Endure Generations</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Discover signed bookplates, blind date with a book mysteries, and archival bookmark ribbons handcrafted for true bibliophiles.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#salon-events" class="primary-btn">
+                            Salon Gatherings <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#offers" class="secondary-btn">
+                            Book Club Privileges
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIP 3: The Booklover's Study & Writing Gear -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.3EvOwgFdwJLn6R9NMQzwggHaDt?r=0&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="vintage-ornament">Artisan Reading Companions</span>
+                    <h1 class="slide-title">
+                        Journals, Book Darts & <span>Literary Oddities</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Pair your evening reading ritual with Italian leather reading logs, vintage brass page markers, and warm fragrant bookplates.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="/stationery.html" class="primary-btn">
+                            Explore Stationery <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="secondary-btn">
+                            Reserve A Rare Title
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slider Arrows -->
+        <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn slider-next" id="sliderNext" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <span class="slider-dot active" data-slide="0"></span>
+            <span class="slider-dot" data-slide="1"></span>
+            <span class="slider-dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- ================= VALUE STRIP ================= -->
+    <div class="shelf-strip" id="values">
+        <div class="container shelf-grid">
+            <div class="shelf-item reveal-element delay-1">
+                <div class="shelf-icon"><i class="fa-solid fa-stamp"></i></div>
+                <div>
+                    <strong>Curated Staff Picks</strong>
+                    <span>Read and reviewed by true book lovers</span>
+                </div>
+            </div>
+            <div class="shelf-item reveal-element delay-2">
+                <div class="shelf-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+                <div>
+                    <strong>Indie Press Focus</strong>
+                    <span>Championing small literary houses</span>
+                </div>
+            </div>
+            <div class="shelf-item reveal-element delay-3">
+                <div class="shelf-icon"><i class="fa-solid fa-box-archive"></i></div>
+                <div>
+                    <strong>Clothbound Classics</strong>
+                    <span>Heirloom editions designed to last</span>
+                </div>
+            </div>
+            <div class="shelf-item reveal-element">
+                <div class="shelf-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                <div>
+                    <strong>Salon Community</strong>
+                    <span>Monthly book circles & discussions</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= ABOUT SECTION: THE SALON ================= -->
+    <section class="section about-sanctuary" id="about">
+        <div class="container about-grid">
+            <div class="about-image-collage reveal-element">
+                <div class="main-about-img">
+                    <img src="https://img.freepik.com/premium-photo/cozy-bookstore-with-warm-inviting-atmosphere_14117-397621.jpg" alt="Warm Cozy Bookstore Ambiance">
+                </div>
+                <div class="about-floating-stamp">
+                    <strong>❖ THE SHELF SANCTUARY</strong>
+                    <p>Designed for slow browsing, quiet contemplation, and finding timeless literature.</p>
+                </div>
+            </div>
+
+            <div class="about-text reveal-element delay-1">
+                <span class="vintage-ornament">Our Independent Heritage</span>
+                <h2>A Quiet Refuge for the <span>Thoughtful Reader</span></h2>
+                <p>
+                    In an era of rushed clicks and disposable paperbacks, <strong>The Shelf</strong> preserves the slow magic of the independent European-style book salon. We treat reading not as a speed race, but as an intimate companionship.
+                </p>
+                <p>
+                    Every shelf is organized intuitively by theme, mood, and philosophic movement. From leather-bound classics to obscure translations of translated poetry, every volume is chosen to enrich your home library for generations.
+                </p>
+
+                <div class="salon-pillars">
+                    <div class="salon-box">
+                        <i class="fa-solid fa-award"></i>
+                        <strong>Rare Prints & Classics</strong>
+                        <span>Authorized heritage presses and collector covers.</span>
+                    </div>
+                    <div class="salon-box">
+                        <i class="fa-solid fa-feather"></i>
+                        <strong>Author-Approved Editions</strong>
+                        <span>Complete unabridged translations with scholarly notes.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CURATED READS SECTION ================= -->
+    <section class="section" id="curated-reads">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="vintage-ornament">Curator's Seasonal Showcase</span>
+                <h2>Captivating Reads On The Shelf</h2>
+                <p>Every volume in our shop is handpicked for literary merit, striking jacket artistry, and unforgettable depth.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- BOOK 1 -->
+                <article class="product-card reveal-element delay-1">
+                    <span class="product-badge">Indie Choice</span>
+                    <div class="product-img-wrap">
+                        <img src="https://m.media-amazon.com/images/I/41AjepLfhAL._SX342_SY445_ML2_.jpg" alt="The Paris Bookseller Hardcover">
+                        <button class="quick-view-btn" data-title="Chronicles of an Antiquarian Paris" data-price="650" data-img="https://m.media-amazon.com/images/I/41AjepLfhAL._SX342_SY445_ML2_.jpg">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Historical Fiction</span>
+                        <h3 class="product-title">Chronicles of an Antiquarian Paris</h3>
+                        <p class="product-desc">A luminous tapestry following a forgotten Left Bank bookstore keeper safeguarding lost poetry during the great cultural rebirth.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹650</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Chronicles of an Antiquarian Paris (₹650)">
+                                <i class="fa-solid fa-bookmark"></i> Enquire
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 2 -->
+                <article class="product-card reveal-element delay-2">
+                    <span class="product-badge">Signed Edition</span>
+                    <div class="product-img-wrap">
+                        <img src="https://junipercustom.com/cdn/shop/files/ELCB3-LF-angle-1200_2048x.jpg?v=1687977986" alt="Clothbound Poetry Collection">
+                        <button class="quick-view-btn" data-title="Midnight Soliloquies (Clothbound)" data-price="820" data-img="https://junipercustom.com/cdn/shop/files/ELCB3-LF-angle-1200_2048x.jpg?v=1687977986">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Poetry & Essays</span>
+                        <h3 class="product-title">Midnight Soliloquies (Clothbound)</h3>
+                        <p class="product-desc">Hand-bound in dark hunter green bookcloth with gold gilt typography, featuring an author-signed embossed archival plate.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹820</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Midnight Soliloquies (Clothbound) (₹820)">
+                                <i class="fa-solid fa-bookmark"></i> Enquire
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOOK 3 -->
+                <article class="product-card reveal-element delay-3">
+                    <span class="product-badge">Staff Pick</span>
+                    <div class="product-img-wrap">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.TqdRJi6SP3Vre3mhWV-M9QHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="The Cartographer of Lost Dreams">
+                        <button class="quick-view-btn" data-title="The Cartographer of Lost Dreams" data-price="590" data-img="https://tse3.mm.bing.net/th/id/OIP.TqdRJi6SP3Vre3mhWV-M9QHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-cat">Speculative Fiction</span>
+                        <h3 class="product-title">The Cartographer of Lost Dreams</h3>
+                        <p class="product-desc">Winner of the Indie Novelists Prize. An evocative mystery of secret subterranean libraries mapped beneath coastal ruins.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹590</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="The Cartographer of Lost Dreams (₹590)">
+                                <i class="fa-solid fa-bookmark"></i> Enquire
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ADDED CONTENT: READING SALON CIRCLES & GATHERINGS ================= -->
+    <section class="section salon-events-section" id="salon-events">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="vintage-ornament">Intimate Literary Evenings</span>
+                <h2>The Reading Salon Circles</h2>
+                <p>Join fellow bibliophiles around warm candlelight and single-origin teas for slow-paced literary discussion circles, author salons, and bookbinding workshops.</p>
+            </div>
+
+            <div class="events-grid">
+                <!-- SALON EVENT 1 -->
+                <div class="event-card reveal-element delay-1">
+                    <div class="event-banner-wrap">
+                        <img src="https://varnam.my/wp-content/uploads/2023/11/IMG_3353-scaled-1.jpg" alt="Parisian Expatriate Salon">
+                        <span class="event-date-chip"><i class="fa-regular fa-calendar"></i> Last Thursday &bull; 6:30 PM</span>
+                    </div>
+                    <div class="event-body">
+                        <span class="event-theme">Literary Retrospective</span>
+                        <h3 class="event-title">Shadows of the Left Bank</h3>
+                        <p class="event-desc">
+                            An evening dissecting early 20th-century expatriate writers, Sylvia Beach's iconic bookstore archives, and the private letters of the modernist rebellion.
+                        </p>
+                        <ul class="event-details-list">
+                            <li><i class="fa-solid fa-feather"></i> <strong>Curator:</strong> Sohial</li>
+                            <li><i class="fa-solid fa-location-dot"></i> <strong>Venue:</strong> The Shelf Hearth & Library</li>
+                            <li><i class="fa-solid fa-gift"></i> <strong>Includes:</strong> Discussion folio & pour-over brew</li>
+                        </ul>
+                        <div class="event-footer">
+                            <span class="event-seats"><i class="fa-solid fa-chair"></i> 12 Seats Total</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Salon Reservation: Shadows of the Left Bank">
+                                Reserve Seat <i class="fa-solid fa-ticket"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SALON EVENT 2 -->
+                <div class="event-card reveal-element delay-2">
+                    <div class="event-banner-wrap">
+                        <img src="https://shop.penguin.co.uk/cdn/shop/files/Untitleddesign_14.png?v=1779269178&width=3840" alt="Translated Fiction Circle">
+                        <span class="event-date-chip"><i class="fa-regular fa-calendar"></i> 2nd Sunday &bull; 4:00 PM</span>
+                    </div>
+                    <div class="event-body">
+                        <span class="event-theme">World Literature Circle</span>
+                        <h3 class="event-title">Voices In Translation</h3>
+                        <p class="event-desc">
+                            Unpacking Mediterranean prose and Japanese quietude. A deep look at how linguistic rhythm shifts across borders and cultures with guest literary translators.
+                        </p>
+                        <ul class="event-details-list">
+                            <li><i class="fa-solid fa-feather"></i> <strong>Curator:</strong> Thamesh </li>
+                            <li><i class="fa-solid fa-location-dot"></i> <strong>Venue:</strong> Reading Terrace Garden</li>
+                            <li><i class="fa-solid fa-gift"></i> <strong>Includes:</strong> Bilingual chapbook & tea tasting</li>
+                        </ul>
+                        <div class="event-footer">
+                            <span class="event-seats"><i class="fa-solid fa-chair"></i> 8 Seats Remaining</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Salon Reservation: Voices In Translation">
+                                Reserve Seat <i class="fa-solid fa-ticket"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SALON EVENT 3 -->
+                <div class="event-card reveal-element delay-3">
+                    <div class="event-banner-wrap">
+                        <img src="https://images.stockcake.com/public/5/1/7/517cd3ef-29f5-44a5-9950-5f15d99c1481/timeless-bookbinding-craft-stockcake.jpg" alt="Artisan Bookbinding Craft">
+                        <span class="event-date-chip"><i class="fa-regular fa-calendar"></i> 3rd Saturday &bull; 2:00 PM</span>
+                    </div>
+                    <div class="event-body">
+                        <span class="event-theme">Hands-On Artisan Guild</span>
+                        <h3 class="event-title">Antiquarian Bookbinding</h3>
+                        <p class="event-desc">
+                            A tactile workshop on hand-sewing paper folios, headbands, and genuine marbled endpapers. Craft your own archival deckle-edge notebook to take home.
+                        </p>
+                        <ul class="event-details-list">
+                            <li><i class="fa-solid fa-feather"></i> <strong>Master Craftsman:</strong> Sai Kiran </li>
+                            <li><i class="fa-solid fa-location-dot"></i> <strong>Venue:</strong> Bookbinders Studio & Atelier</li>
+                            <li><i class="fa-solid fa-gift"></i> <strong>Includes:</strong> Complete toolkit & handbound journal</li>
+                        </ul>
+                        <div class="event-footer">
+                            <span class="event-seats"><i class="fa-solid fa-chair"></i> Limited to 10 Guilders</span>
+                            <button class="enquire-item-btn open-enquiry" data-item="Workshop Reservation: Antiquarian Bookbinding">
+                                Reserve Seat <i class="fa-solid fa-ticket"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= OFFERS BANNER ================= -->
+    <section class="offer-section" id="offers">
+        <div class="container">
+            <div class="offer-banner reveal-element">
+                <div class="offer-info">
+                    <span class="vintage-ornament" style="color: var(--gold-light);">Reader's Circle Invitation</span>
+                    <h2>Receive A Hand-Pressed <span>Brass Bookmark</span> With Any 3 Curated Titles</h2>
+                    <p>Celebrate indie storytelling with our seasonal reader package. Complimentary artisanal tea satchel and custom bookstore wax seal envelope included with every parcel.</p>
+                    <div style="margin-top: 25px;">
+                        <a href="#curated-reads" class="primary-btn">
+                            Explore Bookshelf <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="section" id="contact" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-box reveal-element">
+                <div>
+                    <span class="vintage-ornament" style="color: var(--gold-light);">Personal Book Concierge</span>
+                    <h2>Can't Find That Rare Edition?</h2>
+                    <p>Leave a note with our resident curators for out-of-print book searches, personalized reading list recommendations, or private book salon reservations.</p>
+                </div>
+                <button class="primary-btn" id="openContactModal">
+                    Contact The Desk <i class="fa-solid fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="mainFooter">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>Stationery</span> House
+                        <small>School Books & Supplies </small>
+                    </div>
+                </a>
+                <p>
+                    An independent reading sanctuary and heritage stationery house providing scholars with thoughtfully curated literature, writing tools, and quiet inspiration.
+                </p>
+                <div class="social-row">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="/index.html"><i class="fa-solid fa-angle-right"></i> Home-1 (Academic)</a>
+                <a href="#home"><i class="fa-solid fa-angle-right"></i> Home-2</a>
+                <a href="#about"><i class="fa-solid fa-angle-right"></i> About </a>
+                <a href="/stationery.html"><i class="fa-solid fa-angle-right"></i> Fine Stationery</a>
+                <a href="#offers"><i class="fa-solid fa-angle-right"></i> Seasonal Offers</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Literary Genres</h4>
+                <a href="#curated-reads"><i class="fa-solid fa-angle-right"></i> Historical Fiction</a>
+                <a href="#curated-reads"><i class="fa-solid fa-angle-right"></i> Signed Hardcovers</a>
+                <a href="#curated-reads"><i class="fa-solid fa-angle-right"></i> Clothbound Classics</a>
+                <a href="#curated-reads"><i class="fa-solid fa-angle-right"></i> Independent Poetry</a>
+                <a href="#curated-reads"><i class="fa-solid fa-angle-right"></i> Rare Book Search</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>The Curator Desk</h4>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Badvel Bypass Road, Kadapa,<br>Andhra Pradesh, India
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 93462 54321
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    curator@stationeryhouse.com
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <div class="container copyright-flex">
+                <p>© 2026 Stationery House &bull; The Shelf. All Rights Reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 15px;">Privacy Policy</a>
+                    <a href="#">Reading Salon Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- ================= QUICK VIEW MODAL ================= -->
+    <div class="modal" id="quickModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeQuickModal">&times;</button>
+            <div style="height: 240px; border-radius: 10px; overflow: hidden; margin-bottom: 18px;">
+                <img id="quickModalImg" src="" alt="Book Preview" style="height: 100%; width: 100%; object-fit: cover;">
+            </div>
+            <h3 id="quickModalTitle" style="font-size: 22px; margin-bottom: 8px;">Book Title</h3>
+            <h4 id="quickModalPrice" style="color: var(--gold-primary); font-size: 22px; margin-bottom: 15px;">₹0</h4>
+            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 25px;">
+                Curated selection from The Shelf Independent Collection. Comes packaged with an embossed bookplate and bookmark ribbon.
+            </p>
+            <button class="primary-btn" id="quickModalEnquireBtn" style="width: 100%; justify-content: center;">
+                Reserve This Copy <i class="fa-solid fa-bookmark" style="margin-left: 8px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= CONTACT & ENQUIRY MODAL ================= -->
+    <div class="modal" id="contactModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeContactModal">&times;</button>
+            <span class="vintage-ornament">Curator Reserve Desk</span>
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Book Enquiry & Special Orders</h3>
+            <form id="enquiryForm" style="display: grid; gap: 15px;">
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Your Name</label>
+                    <input type="text" id="contactName" required placeholder="e.g. Arundhati Rao" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Email Address</label>
+                    <input type="email" id="contactEmail" required placeholder="reader@literature.org" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Contact Phone</label>
+                    <input type="tel" id="contactPhone" required placeholder="+91 98765 43210" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Enquiry Category</label>
+                    <select id="contactType" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                        <option>Reserve Selected Curated Title</option>
+                        <option>Reading Salon / Workshop Reservation</option>
+                        <option>Out-of-Print Rare Book Search</option>
+                        <option>Book Club Salon Bulk Order</option>
+                        <option>Artisan Stationery & Gift Set</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Title / Message</label>
+                    <textarea id="contactMsg" rows="3" required placeholder="Specify author, publication preference, or request details..." style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);"></textarea>
+                </div>
+                <button type="submit" class="primary-btn" style="width: 100%; justify-content: center; margin-top: 5px;">
+                    Send Request To Curator
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-msg" id="toastMsg">Action completed successfully ✓</div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="home2.js"></script>
+</body>
+</html>

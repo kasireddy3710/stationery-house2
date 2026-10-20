@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Stationery House - School Books & Supplies</title>
+
+    <!-- Google Fonts: Heritage Serif & Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/0d7221de-f61b-4b2c-b4a9-3c72b104271d.jpg">
+    <!-- Font Awesome 6.5.2 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- ================= TOP FLOATING UTILITIES ================= -->
+    <div class="utility-bar">
+        <button class="util-btn" id="themeBtn" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+           
+        </button>
+
+        <button class="util-btn" id="directionBtn" aria-label="Toggle Direction">
+            <i class="fa-solid fa-globe"></i>
+            <span id="dirBtnText">RTL</span>
+        </button>
+    </div>
+
+    <!-- ================= MAIN AUTHENTICATION CARD ================= -->
+    <main class="auth-container">
+
+        <!-- LEFT PANEL: BRAND & HERITAGE -->
+        <section class="auth-visual-panel">
+            <div class="auth-visual-bg"></div>
+
+            <div class="auth-visual-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>Stationery</span> House
+                        <small>School Books & Supplies</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="heritage-statement">
+                <span class="vintage-ornament">Scholastic Portal</span>
+                <h2>Gateway to <span>Academic Excellence</span></h2>
+                <p>Access your school bundles, certified curriculum guides, student kits, and institutional bulk requisitions.</p>
+            </div>
+
+            <div class="stamp-badge-compact">
+                <i class="fa-solid fa-award"></i>
+                <span>Estd. 1984 • Certified Genuine</span>
+            </div>
+        </section>
+
+        <!-- RIGHT PANEL: SIGN IN FORM -->
+        <section class="auth-form-panel">
+            <div class="form-header">
+                <h1>Welcome Back</h1>
+                <p>Please enter your scholastic or institutional credentials.</p>
+            </div>
+
+            <form class="auth-form" id="loginForm">
+                <div class="form-group">
+                    <label class="form-label" for="userEmail">Email or Student / Institutional ID</label>
+                    <div class="input-wrap">
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                        <input type="text" id="userEmail" class="auth-input" placeholder="e.g. kasi@stationeryhouse.com" required autocomplete="username">
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label class="form-label" for="userPassword">Secret Password</label>
+                    <div class="input-wrap">
+                        <i class="fa-solid fa-lock input-icon"></i>
+                        <input type="password" id="userPassword" class="auth-input" placeholder="••••••••••••" required autocomplete="current-password">
+                        <button type="button" class="toggle-password" id="togglePasswordBtn" aria-label="Toggle password visibility">
+                            <i class="fa-solid fa-eye" id="togglePasswordIcon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Remember Me & Forgot Password -->
+                <div class="form-options">
+                    <label class="remember-wrap">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-link" id="forgotPasswordLink">Forgot password?</a>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span>Sign In to Home</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="auth-divider">
+                    <span>Or Connect With</span>
+                </div>
+
+                <!-- Institutional / Fast Logins -->
+                <div class="social-auth-grid">
+                    <button type="button" class="social-auth-btn" onclick="simulateOAuth('Google')">
+                        <i class="fa-brands fa-google" style="color: #ea4335;"></i>
+                        <span>Google Workspace</span>
+                    </button>
+                    <button type="button" class="social-auth-btn" onclick="simulateOAuth('Institutional Portal')">
+                        <i class="fa-solid fa-building-columns" style="color: var(--gold-primary);"></i>
+                        <span>School Portal</span>
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    Don’t have an academic account? 
+                    <a href="#" id="registerLink">Register Institution</a>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-msg" id="toastMsg">
+        <i class="fa-solid fa-circle-check" style="color: var(--gold-light);"></i>
+        <span id="toastText">Signed in successfully!</span>
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="login.js">
+        
+    </script>
+</body>
+</html>

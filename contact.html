@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Stationery House - School Books & Supplies</title>
+
+    <!-- Google Fonts: Heritage Serif & Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/0d7221de-f61b-4b2c-b4a9-3c72b104271d.jpg">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <span>Stationery</span> House
+                    <small>School Books & Supplies</small>
+                </div>
+            </a>
+
+            <!-- NAVIGATION ITEMS WITH HOME DROPDOWN -->
+            <nav class="nav-links" id="navLinks">
+                <!-- DROPDOWN ON HOME ITEM -->
+                <div class="nav-item dropdown" id="homeDropdownItem">
+                    <a href="/index.html" class="nav-link dropdown-toggle" id="homeDropdownToggle" aria-haspopup="true" aria-expanded="false">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </a>
+                    <div class="dropdown-menu" id="homeDropdownMenu" aria-labelledby="homeDropdownToggle">
+                        <a href="/index.html" class="dropdown-item">
+                            <i class="fa-solid fa-home"></i>
+                            <span>Home-1</span>
+                        </a>
+                        <a href="/home2.html" class="dropdown-item">
+                            <i class="fa-solid fa-home"></i>
+                            <span>Home-2</span>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="/about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/stationery.html" class="nav-link">Stationery</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="/offers.html" class="nav-link">Offers</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/contact.html" class="nav-link active">Contact</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/dashboard.html" class="nav-link">Dashboard</a>
+                </div>
+            </nav>
+
+            <!-- NAV ACTIONS: THEME + RTL + SHOP NOW -->
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="direction-btn" id="directionBtn" aria-label="Toggle RTL">
+                    <span>RTL</span>
+                </button>
+
+                <a href="#books-desk" class="shop-btn">
+                    <span>Shop Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= 3 ANIMATED CLIP PHOTOS (HERO CAROUSEL) ================= -->
+    <section class="clip-hero-section" id="home">
+        <div class="clip-slider-track" id="clipSliderTrack">
+
+            <!-- CLIP PHOTO 1: Academic & Books Desk -->
+            <div class="clip-slide active">
+                <div class="clip-bg" style="background-image: url('https://static.vecteezy.com/system/resources/previews/074/374/418/large_2x/stack-of-books-on-wooden-desk-in-library-setting-photo.jpg');"></div>
+                <div class="clip-overlay"></div>
+                <div class="container clip-content">
+                    <span class="vintage-ornament">Curated Academic Assistance</span>
+                    <h1 class="clip-title">Get in Touch with our <span>Academic Desk</span></h1>
+                    <p class="clip-desc">Direct publisher textbook inquiries, CBSE & ICSE syllabus packages, board exam guides, and educator support crafted with royal care.</p>
+                    <a href="#contact-form" class="primary-btn">
+                        Submit Book Enquiry <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CLIP PHOTO 2: Fine Writing Tools & Stationery -->
+            <div class="clip-slide">
+                <div class="clip-bg" style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.ZONGTjdDoQapwzJQj_p8JQHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+                <div class="clip-overlay"></div>
+                <div class="container clip-content">
+                    <span class="vintage-ornament">Craftsmanship In Every Stroke</span>
+                    <h1 class="clip-title">Fine Stationery & <span>Artisan Tools</span></h1>
+                    <p class="clip-desc">Looking for custom-embossed school notebooks, gold-nib fountain pens, brass geometry sets, or fine art supplies? Our team assists individual and retail orders.</p>
+                    <a href="#stationery-desk" class="primary-btn">
+                        Explore Stationery Support <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CLIP PHOTO 3: Institutional School Kits & Seasonal Deals -->
+            <div class="clip-slide">
+                <div class="clip-bg" style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230713/pngtree-d-rendering-of-modern-workspace-featuring-laptop-camera-stationery-and-supplies-image_3856699.jpg');"></div>
+                <div class="clip-overlay"></div>
+                <div class="container clip-content">
+                    <span class="vintage-ornament">Wholesale & Institutional Desk</span>
+                    <h1 class="clip-title">Curated School Kits & <span>Bulk Offers</span></h1>
+                    <p class="clip-desc">All-in-one curated packages for elementary and high school campuses. Request sample kits, special 20% institutional quotas, and scheduled deliveries.</p>
+                    <a href="#kits-desk" class="primary-btn">
+                        Request Institutional Quotation <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="clip-arrow clip-prev" id="clipPrev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="clip-arrow clip-next" id="clipNext" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="clip-controls" id="clipDots">
+            <span class="clip-dot active" data-slide="0"></span>
+            <span class="clip-dot" data-slide="1"></span>
+            <span class="clip-dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- ================= QUICK CONTACT VALUE BAR ================= -->
+    <div class="contact-strip" id="quick-contact">
+        <div class="container contact-grid-top">
+            <div class="contact-card-top">
+                <div class="card-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div>
+                    <strong>Direct Hotline</strong>
+                    <span>+91 93462 54321</span>
+                </div>
+            </div>
+            <div class="contact-card-top">
+                <div class="card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                <div>
+                    <strong>Official Desk</strong>
+                    <span>kasi@stationeryhouse.com</span>
+                </div>
+            </div>
+            <div class="contact-card-top">
+                <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div>
+                    <strong>Store & Warehouse</strong>
+                    <span>Kadapa, Andhra Pradesh</span>
+                </div>
+            </div>
+            <div class="contact-card-top">
+                <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                    <strong>Working Hours</strong>
+                    <span>Mon - Sat: 9:00 AM - 8:30 PM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MAIN CONTACT FORM & DETAILS SECTION ================= -->
+    <section class="section" id="contact-form">
+        <div class="container">
+            <div class="section-header">
+                <span class="vintage-ornament">Direct Communication</span>
+                <h2>Send Us a Message or Order Inquiry</h2>
+                <p>Whether you need board textbooks, custom school kits, fine stationery, or institutional pricing, our consultation team is at your disposal.</p>
+            </div>
+
+            <div class="contact-main-grid">
+
+                <!-- Interactive Form -->
+                <div class="form-card">
+                    <h3>Academic & Supplies Enquiry</h3>
+                    <p>Fill out the fields below and our desk manager will respond within 4 business hours.</p>
+
+                    <form id="contactPageForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="userName">Full Name *</label>
+                                <input type="text" id="userName" required placeholder="e.g. S. Ramanujam">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userInstitution">School / Institution Name</label>
+                                <input type="text" id="userInstitution" placeholder="e.g. Kendriya Vidyalaya / Scholar">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userEmail">Email Address *</label>
+                                <input type="email" id="userEmail" required placeholder="contact@scholar.org">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userPhone">Phone Number *</label>
+                                <input type="tel" id="userPhone" required placeholder="+91 98765 43210">
+                            </div>
+
+                            <div class="form-group full">
+                                <label for="userCategory">Subject / Category of Inquiry *</label>
+                                <select id="userCategory">
+                                    <option value="school-kits">Curated School Kits Bulk Order (Class 1 - 10)</option>
+                                    <option value="books">CBSE / ICSE / State Board Textbooks Consignment</option>
+                                    <option value="stationery">Fine Writing Tools & Paper Goods Bulk Order</option>
+                                    <option value="offers">Seasonal Institutional 20% Discount Verification</option>
+                                    <option value="custom">Custom Student Kit Packaging Request</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full">
+                                <label for="userMessage">Message / Specific Requirements *</label>
+                                <textarea id="userMessage" rows="4" required placeholder="List textbook titles, required kit quantities, target academic session dates, or queries..."></textarea>
+                            </div>
+
+                            <div class="form-group full">
+                                <button type="submit" class="primary-btn" style="width: 100%;">
+                                    <span>Dispatch Enquiry</span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Overview Information -->
+                <div class="info-card">
+                    <h3>Headquarter Information</h3>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <div>
+                            <strong>Physical Store Address</strong>
+                            <p>Stationery House, Badvel Bypass Road, Kadapa District, Andhra Pradesh - 516001, India.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-boxes-packing"></i>
+                        <div>
+                            <strong>Institutional Supply Desk</strong>
+                            <p>Bulk dispatch manager: <strong>+91 93462 54321</strong><br>Email: <strong>kasi@stationeryhouse.com</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                        <div>
+                            <strong>Campus Delivery Logistics</strong>
+                            <p>Free doorstep distribution for institutional partner orders over 50 kits across Andhra Pradesh and Telangana.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div>
+                            <strong>Publisher Authorization</strong>
+                            <p>Certified NCERT, CBSE, Oxford University Press, and Cambridge educational distributor.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DEPARTMENT DESKS ================= -->
+    <section class="department-section" id="academic-desks">
+        <div class="container">
+            <div class="section-header">
+                <span class="vintage-ornament">Specialized Divisions</span>
+                <h2>Dedicated Scholastic Desks</h2>
+                <p>Connect with the precise coordinator handling each division of Stationery House.</p>
+            </div>
+
+            <div class="dept-grid">
+
+                <!-- BOOKS DESK -->
+                <div class="dept-card" id="books-desk">
+                    <div class="dept-icon"><i class="fa-solid fa-book"></i></div>
+                    <h4>Books Division</h4>
+                    <p>NCERT guides, CBSE Class 1-12 sets, ICSE Literature, Advanced Mathematics, Chemistry lab manuals, and classical anthologies.</p>
+                    <a href="/stationery.html" class="select-dept" data-cat="books">Inquire for Books <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- STATIONERY DESK -->
+                <div class="dept-card" id="stationery-desk">
+                    <div class="dept-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h4>Stationery Division</h4>
+                    <p>Royal Sovereign fountain pens, 100 GSM hardbound notebooks, brass geometry sets, cedar graphite pencils, and canvas bags.</p>
+                    <a href="/stationery.html" class="select-dept" data-cat="stationery">Inquire for Stationery <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- SCHOOL KITS DESK -->
+                <div class="dept-card" id="kits-desk">
+                    <div class="dept-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                    <h4>School Kits Desk</h4>
+                    <p>Primary Scholar Kits (₹699), High School Royal Kits (₹999), and College Aspirant Bundles (₹849) packaged with custom labeling.</p>
+                    <a href="/stationery.html" class="select-dept" data-cat="school-kits">Inquire for School Kits <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- OFFERS DESK -->
+                <div class="dept-card" id="offers-desk">
+                    <div class="dept-icon"><i class="fa-solid fa-tags"></i></div>
+                    <h4>Offers & Subsidies</h4>
+                    <p>Seasonal flat 20% discounts on all pre-packaged academic sets and special early-bird rates for affiliated schools.</p>
+                    <a href="/offers.html" class="select-dept" data-cat="offers">Inquire for Discounts <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MAP EMBED SECTION ================= -->
+    <section class="map-section" id="store-map">
+        <div class="container">
+            <div class="map-wrapper">
+                <iframe 
+                    title="Stationery House Location Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123862.06737522509!2d78.75143302098656!3d14.479361732644268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb37207c4d5db21%3A0xb36efae74beee92a!2sKadapa%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>Stationery</span> House
+                        <small>School Books & Supplies</small>
+                    </div>
+                </a>
+                <p>
+                    Serving students, educators, and schools with genuine textbooks, fine writing stationery, and complete kits crafted with royal dedication.
+                </p>
+                <div class="social-row">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a>
+                <a href="#books-desk"><i class="fa-solid fa-angle-right"></i> About</a>
+                <a href="#stationery-desk"><i class="fa-solid fa-angle-right"></i> Fine Stationery</a>
+                <a href="#kits-desk"><i class="fa-solid fa-angle-right"></i> Seasonal Offers</a>
+                <a href="#offers-desk"><i class="fa-solid fa-angle-right"></i>Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <a href="#books-desk"><i class="fa-solid fa-angle-right"></i> CBSE Textbooks</a>
+                <a href="#books-desk"><i class="fa-solid fa-angle-right"></i> ICSE Guides</a>
+                <a href="#stationery-desk"><i class="fa-solid fa-angle-right"></i> Fountain Pens</a>
+                <a href="#stationery-desk"><i class="fa-solid fa-angle-right"></i> Geometry Boxes</a>
+                <a href="#kits-desk"><i class="fa-solid fa-angle-right"></i> Student Packages</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Reach Our Desk</h4>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Badvel Bypass Road, Kadapa,<br>Andhra Pradesh, India
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 93462 54321
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    kasi@stationeryhouse.com
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <div class="container copyright-flex">
+                <p>© 2026 Stationery House. All Rights Reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 15px;">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#home" class="back-to-top" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-msg" id="toastMsg">
+        Message dispatched successfully ✓
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="contact.js">
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Stationery House</title>
+
+    <!-- Google Fonts: Heritage Serif & Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/0d7221de-f61b-4b2c-b4a9-3c72b104271d.jpg">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+   <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="mainHeader">
+        <div class="container nav-container">
+            <a href="/index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <span>Stationery</span> House
+                    <small>School Books & Supplies</small>
+                </div>
+            </a>
+
+            <!-- NAVIGATION ITEMS WITH HOME DROPDOWN -->
+            <nav class="nav-links" id="navLinks">
+                <div class="nav-item has-dropdown" id="homeDropdownItem">
+                    <a href="/index.html" class="nav-link" id="homeNavBtn" aria-expanded="false" aria-haspopup="true">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+                    </a>
+                    <div class="dropdown-menu" id="homeDropdownMenu" role="menu">
+                        <a href="/index.html" class="dropdown-item" role="menuitem">
+                            <div class="dropdown-icon">
+                                <i class="fa-solid fa-home"></i>
+                            </div>
+                            <div class="dropdown-text">
+                                <strong>Home-1</strong>
+                            </div>
+                        </a>
+                        <a href="/home2.html" class="dropdown-item" role="menuitem">
+                            <div class="dropdown-icon">
+                                <i class="fa-solid fa-home"></i>
+                            </div>
+                            <div class="dropdown-text">
+                                <strong>Home-2</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="/about.html" class="nav-link active">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/stationery.html" class="nav-link">Stationery</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="/offers.html" class="nav-link">Offers</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/dashboard.html" class="nav-link">Dashboard</a>
+                </div>
+            </nav>
+
+            <!-- NAV ACTIONS -->
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="direction-btn" id="directionBtn" aria-label="Toggle RTL">
+                    <span>RTL</span>
+                </button>
+
+                <a href="/stationery.html" class="shop-btn">
+                    <span>Shop Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= 3 ANIMATED CLIP BOOKS HERO SLIDER ================= -->
+    <section class="slider-section" id="home">
+        <div class="slider-track" id="sliderTrack">
+
+            <!-- CLIP BOOK IMAGE 1: ARCHIVAL LIBRARY VOLUMES -->
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('https://wallpaperaccess.com/full/124499.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <div class="breadcrumb">
+                        <a href="/index.html">Home</a>
+                        <i class="fa-solid fa-chevron-right" style="font-size: 9px;"></i>
+                    </div>
+                    <span class="vintage-ornament">The Stationery — Curated Reads</span>
+                    <h1 class="slide-title">
+                        Good Heritage of <span>Scholarly Pursuits</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Curating certified school textbooks, board-approved syllabi, and rare academic archives designed to kindle lifelong curiosity and intellectual excellence from foundational grades to competitive ranks.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#clip-books" class="primary-btn">
+                            Explore Curated Reads <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#heritage-story" class="secondary-btn">
+                            Our 40-Year Journey
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIP BOOK IMAGE 2: HARDCOVER COLLECTIBLE EDITIONS -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://media.istockphoto.com/id/540610540/photo/open-book-on-table-in-front-of-spring-summer-background.jpg?s=170667a&w=0&k=20&c=6YW2xDnGnyWa47JGSlrwhKIX15THKB-la8G14G5jZoQ=');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <div class="breadcrumb">
+                        <a href="/index.html">Home</a>
+                        <i class="fa-solid fa-chevron-right" style="font-size: 9px;"></i>
+                    </div>
+                    <span class="vintage-ornament">Curatorial Rigor & Craft</span>
+                    <h1 class="slide-title">
+                        Heirloom Editions & <span>Timeless Bindings</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Every volume selected for The Shelf undergoes stringent curatorial review. From archival acid-free notebooks to gold-gilded classic folios, we champion the tactile majesty of true print.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#pillars" class="primary-btn">
+                            Our Standards <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#curators" class="secondary-btn">
+                            Meet The Curators
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIP BOOK IMAGE 3: CLASSROOM REFERENCE & COMPLETE PACKS -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230904/pngtree-an-old-book-with-brown-flowers-and-a-pen-on-wooden-image_13184926.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <div class="breadcrumb">
+                        <a href="/index.html">Home</a>
+                        <i class="fa-solid fa-chevron-right" style="font-size: 9px;"></i>
+                    </div>
+                    <span class="vintage-ornament">Institutional Solutions</span>
+                    <h1 class="slide-title">
+                        Equipping Scholars with <span>Complete Kits</span>
+                    </h1>
+                    <p class="slide-desc">
+                        Partnering directly with premier educators and schools to eliminate textbook scarcity. Discover tailored grade kits, laboratory journals, and mathematical tools bundled with subsidized institutional pricing.
+                    </p>
+                    <div class="slider-actions">
+                        <a href="#contact" class="primary-btn">
+                            Partner With Us <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="/offers.html" class="secondary-btn">
+                            School Bundles
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slider Arrows -->
+        <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn slider-next" id="sliderNext" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <span class="slider-dot active" data-slide="0"></span>
+            <span class="slider-dot" data-slide="1"></span>
+            <span class="slider-dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- ================= STATS / IMPACT STRIP ================= -->
+    <div class="stats-strip">
+        <div class="container stats-grid">
+            <div class="stat-item reveal-up delay-1">
+                <div class="stat-number" data-target="40" data-suffix="+">0</div>
+                <div class="stat-label">Years of Heritage</div>
+                <div class="stat-desc">Serving scholars since 1984</div>
+            </div>
+            <div class="stat-item reveal-up delay-2">
+                <div class="stat-number" data-target="250" data-suffix="K+">0</div>
+                <div class="stat-label">Students Equipped</div>
+                <div class="stat-desc">Primary grades to universities</div>
+            </div>
+            <div class="stat-item reveal-up delay-3">
+                <div class="stat-number" data-target="1200" data-format="comma" data-suffix="+">0</div>
+                <div class="stat-label">Institutions Supported</div>
+                <div class="stat-desc">State & national board partners</div>
+            </div>
+            <div class="stat-item reveal-up delay-4">
+                <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                <div class="stat-label">Certified Authentic</div>
+                <div class="stat-desc">Authorized publisher direct editions</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= 3 ANIMATED CLIP BOOKS SHOWCASE GALLERY ================= -->
+    <section class="clip-books-section" id="clip-books">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="vintage-ornament">The Shelf Gallery</span>
+                <h2>3 Iconic Curated Volumes</h2>
+                <p>Explore the flagship editions that embody our commitment to pedagogical brilliance, archival quality, and timeless wisdom.</p>
+            </div>
+
+            <div class="clip-books-grid">
+
+                <!-- ANIMATED CLIP BOOK 1 -->
+                <article class="clip-book-card reveal-up delay-1">
+                    <span class="clip-book-badge royal">CBSE / NCERT Core</span>
+                    <div class="clip-book-visual">
+                        <img src="https://pictures.abebooks.com/isbn/9783937283098-us.jpg" alt="Foundation Academic Codex" class="clip-book-img clip-shape-1">
+                    </div>
+                    <div class="clip-book-body">
+                        <span class="clip-book-tag">Curriculum Pillar</span>
+                        <h3 class="clip-book-title">The Foundation Academic Codex</h3>
+                        <p class="clip-book-desc">
+                            Direct board-authorized editions featuring rigorous theoretical models, verified problem sets, and color-coded conceptual diagrams calibrated for high school scholars.
+                        </p>
+                        <div class="clip-book-footer">
+                            <span class="curated-year">ESTD. 1984 ARCHIVE</span>
+                            <a href="/index.html#books" class="view-shelf-btn">
+                                Explore <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ANIMATED CLIP BOOK 2 -->
+                <article class="clip-book-card reveal-up delay-2">
+                    <span class="clip-book-badge">Archival Classics</span>
+                    <div class="clip-book-visual">
+                        <img src="https://i.ebayimg.com/images/g/698AAeSwnhhpwvsG/s-l500.jpg" alt="Heritage Collectible Folio" class="clip-book-img clip-shape-2">
+                    </div>
+                    <div class="clip-book-body">
+                        <span class="clip-book-tag">The Shelf Exclusive</span>
+                        <h3 class="clip-book-title">The Heritage Collectible Folio</h3>
+                        <p class="clip-book-desc">
+                            Hand-bound literature volumes stamped on 100 GSM acid-free Swedish paper, protected with reinforced book-cloth spines to endure generations of eager marginalia.
+                        </p>
+                        <div class="clip-book-footer">
+                            <span class="curated-year">LIMITED FOLIO</span>
+                            <a href="/stationery.html" class="view-shelf-btn">
+                                Explore <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ANIMATED CLIP BOOK 3 -->
+                <article class="clip-book-card reveal-up delay-3">
+                    <span class="clip-book-badge royal">STEM & Laboratory</span>
+                    <div class="clip-book-visual">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.cZ-X6Ared2KkW4WN3c0U1AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Advanced Reference Manual" class="clip-book-img clip-shape-3">
+                    </div>
+                    <div class="clip-book-body">
+                        <span class="clip-book-tag">Scholastic Reference</span>
+                        <h3 class="clip-book-title">The Master STEM & Lab Manual</h3>
+                        <p class="clip-book-desc">
+                            Synthesizing advanced calculus, kinematics, organic chemical kinetics, and lab safety protocols in collaboration with regional senior science faculties.
+                        </p>
+                        <div class="clip-book-footer">
+                            <span class="curated-year">FACULTY APPROVED</span>
+                            <a href="/index.html#books" class="view-shelf-btn">
+                                Explore <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DETAILED STORY / ORIGIN ================= -->
+    <section class="section origin-section" id="heritage-story">
+        <div class="container origin-grid">
+            <div class="origin-content reveal-left">
+                <span class="vintage-ornament">Preserving Scholastic Tradition</span>
+                <h2>Dedicated to the <span>Art of Learning</span> and Fine Stationery</h2>
+                <p>
+                    Established over four decades ago, Stationery House began with a single vision: to ensure no scholar had to compromise on the purity, precision, or authenticity of their learning materials. What began as a humble storefront on the Kadapa bypass has blossomed into an institution trusted by thousands of families and academic trustees.
+                </p>
+                <div class="origin-highlight">
+                    "We do not merely supply paper and ink. We construct the physical foundation upon which young minds ink their grandest questions and ideas."
+                </div>
+                <p>
+                    Under our dedicated initiative, <strong>The Shelf — Curated Reads</strong>, we extend our passion beyond everyday curriculum textbooks into handpicked literature, historical chronicles, and artisan writing apparatus. Every notebook spine is structurally reinforced, every fountain nib tested for balanced flow, and every school curriculum pack checked against state board directives.
+                </p>
+            </div>
+
+            <div class="origin-media reveal-right">
+                <div class="origin-img-wrap">
+                    <img src="https://i.pinimg.com/736x/ea/46/ff/ea46ffc26f2ea56adc11e031651e7ef8.jpg" alt="Stationery House Heritage Library">
+                </div>
+                <div class="floating-badge">
+                    <strong>ESTD. 1984</strong>
+                    <span>Kadapa, Andhra Pradesh — Authentic scholastic supplies crafted with enduring integrity.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PILLARS / VALUES ================= -->
+    <section class="section pillars-section" id="pillars">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="vintage-ornament">Guiding Standards</span>
+                <h2>The Six Pillars of Our Craft</h2>
+                <p>Every book, instrument, and bundle in our catalog adheres to uncompromising institutional standards.</p>
+            </div>
+
+            <div class="pillars-grid">
+                <!-- Pillar 1 -->
+                <div class="pillar-card reveal-up delay-1">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <h3>Curatorial Rigor</h3>
+                    <p>
+                        We hand-verify syllabus certifications across CBSE, ICSE, and regional boards so educators, teachers, and students receive only pristine, updated editions.
+                    </p>
+                    <span class="pillar-tag">Standardized Accuracy</span>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="pillar-card reveal-up delay-2">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-feather"></i>
+                    </div>
+                    <h3>Archival Paper Quality</h3>
+                    <p>
+                        Our signature notebooks feature heavyweight, acid-free GSM paper crafted to resist ink bleed, feathering, and the natural yellowing of time.
+                    </p>
+                    <span class="pillar-tag">100% Acid-Free Sheets</span>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="pillar-card reveal-up delay-3">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3>Engineered Precision</h3>
+                    <p>
+                        From solid brass compasses calibrated down to the millimeter to ergonomic writing grips, our scholastic tools foster focus without fatigue.
+                    </p>
+                    <span class="pillar-tag">Millimeter Calibration</span>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="pillar-card reveal-up delay-1">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <h3>Bespoke Institutional Kits</h3>
+                    <p>
+                        We relieve families of chaotic back-to-school marathons by packaging complete, educator-approved sets delivered directly to classrooms or homes.
+                    </p>
+                    <span class="pillar-tag">Educator Approved</span>
+                </div>
+
+                <!-- Pillar 5 -->
+                <div class="pillar-card reveal-up delay-2">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3>Fair & Direct Pricing</h3>
+                    <p>
+                        By operating direct channels with authorized textbook houses and stationery crafters, we offer subsidized pricing for schools and families alike.
+                    </p>
+                    <span class="pillar-tag">Transparent Value</span>
+                </div>
+
+                <!-- Pillar 6 -->
+                <div class="pillar-card reveal-up delay-3">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Conscious Craft</h3>
+                    <p>
+                        Our packaging and binding prioritize sustainably forested pulp, minimal plastics, and reusable wraps designed for whole-term durability.
+                    </p>
+                    <span class="pillar-tag">Conscious Future</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HISTORICAL MILESTONES TIMELINE ================= -->
+    <section class="section timeline-section" id="timeline">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="vintage-ornament">Chronicle of Growth</span>
+                <h2>Four Decades of Academic Service</h2>
+                <p>Trace the milestones that established Stationery House as a sanctuary for students, scholars, and educational institutions.</p>
+            </div>
+
+            <div class="timeline-wrapper">
+                <!-- Milestone 1 -->
+                <div class="timeline-row">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-box reveal-left">
+                        <div class="timeline-year">1984</div>
+                        <h4>The Foundational Desk</h4>
+                        <p>Opened our flagship doors in Kadapa with a modest shelf of certified school textbooks, drawing inks, and classic handmade ledger pads.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 2 -->
+                <div class="timeline-row">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-box reveal-right">
+                        <div class="timeline-year">1998</div>
+                        <h4>Board Certification Alliance</h4>
+                        <p>Formalized direct procurement channels with national academic boards, becoming the primary regional distribution depot for verified school literature.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3 -->
+                <div class="timeline-row">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-box reveal-left">
+                        <div class="timeline-year">2012</div>
+                        <h4>Launch of Signature Ready-Kits</h4>
+                        <p>Introduced all-in-one grade packages, standardizing classroom supplies for over 200 partner schools across the region.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 4 -->
+                <div class="timeline-row">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-box reveal-right">
+                        <div class="timeline-year">2026</div>
+                        <h4>The Shelf — Curated Reads Atelier</h4>
+                        <p>Unveiled our digital and archival curation branch, blending rare classics, specialized artisan writing implements, and rapid institutional fulfillment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CURATOR LEADERSHIP ================= -->
+    <section class="section curators-section" id="curators">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="vintage-ornament">Stewards of Knowledge</span>
+                <h2>Meet the Curators</h2>
+                <p>The educators, bibliophiles, and craftspeople ensuring every item reflects the hallmark of quality.</p>
+            </div>
+
+            <div class="curators-grid">
+                <div class="curator-card reveal-up delay-1">
+                    <div class="curator-img-wrap">
+                        <img src="https://wallpapercave.com/wp/wp8265028.jpg" alt="Head Curator">
+                    </div>
+                    <div class="curator-body">
+                        <h3>Dharshini</h3>
+                        <span class="curator-role">Founder & Chief Curator</span>
+                        <p>Guiding the scholastic ethos of Stationery House for over 35 years with an unwavering dedication to literacy and student empowerment.</p>
+                    </div>
+                </div>
+
+                <div class="curator-card reveal-up delay-2">
+                    <div class="curator-img-wrap">
+                        <img src="https://media.istockphoto.com/id/1566610109/photo/student-standing-with-her-note-book-while-her-friends-are-studying-behind-her.jpg?s=170667a&w=0&k=20&c=z57-HvnGTNRnLOHNpUdFdkM0B3jUvFwiNrUi4vbdM9Y=" alt="Academic Liaison">
+                    </div>
+                    <div class="curator-body">
+                        <h3>Dr. Vasini Sharma</h3>
+                        <span class="curator-role">Director of Academic Affairs</span>
+                        <p>Former curriculum supervisor steering our textbook authenticity guidelines and school kit partnerships across the state.</p>
+                    </div>
+                </div>
+
+                <div class="curator-card reveal-up delay-3">
+                    <div class="curator-img-wrap">
+                        <img src="https://content.fortune.com/wp-content/uploads/2023/01/OpenAI-Sam-Altman-h_15241239-final.jpg" alt="Master Craftsman">
+                    </div>
+                    <div class="curator-body">
+                        <h3>Nehru Babu</h3>
+                        <span class="curator-role">Stationery & Archival Lead</span>
+                        <p>An artisan paper technologist who rigorously supervises paper GSM thresholds, ink resistance, and precision tool calibration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HERITAGE QUOTE BLOCK ================= -->
+    <section class="quote-section">
+        <div class="container quote-wrapper reveal-scale">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <div class="quote-text">
+                "A library is not a luxury, but one of the necessities of life. To place a genuine book and a balanced pen in the hand of a student is to ignite an eternal lantern."
+            </div>
+            <div class="quote-author">Stationery House Creed</div>
+            <div class="quote-caption">Serving Academic Circles Since 1984</div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT CTA SECTION ================= -->
+    <section class="section" id="contact" style="padding-bottom: 95px;">
+        <div class="container">
+            <div class="contact-box reveal-up">
+                <div>
+                    <span class="vintage-ornament" style="color: var(--gold-light);">Connect With Our Curators</span>
+                    <h2>Partner With Us For Your Institution</h2>
+                    <p>Whether you require personalized academic booklists, customized school kits, or bulk library consignments, our desk is prepared to assist you.</p>
+                </div>
+                <button class="primary-btn" id="openContactModal">
+                    <span>Send Enquiry</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="mainFooter">
+        <div class="container footer-grid">
+            <div class="footer-brand reveal-up delay-1">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>Stationery</span> House
+                        <small>School Books & Supplies</small>
+                    </div>
+                </a>
+                <p>
+                    Serving students, educators, and schools with genuine textbooks, fine writing stationery, and complete kits crafted with royal dedication.
+                </p>
+                <div class="social-row">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links reveal-up delay-2">
+                <h4>Quick Links</h4>
+                <a href="/index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a>
+                <a href="/stationery.html"><i class="fa-solid fa-angle-right"></i> Fine Stationery</a>
+                <a href="/offers.html"><i class="fa-solid fa-angle-right"></i> Offers</a>
+                <a href="/contacthtml"><i class="fa-solid fa-angle-right"></i> Contact</a>
+            </div>
+
+            <div class="footer-links reveal-up delay-3">
+                <h4>Curations</h4>
+                <a href="/index.html#books"><i class="fa-solid fa-angle-right"></i> CBSE Textbooks</a>
+                <a href="/index.html#books"><i class="fa-solid fa-angle-right"></i> ICSE Guides</a>
+                <a href="/stationery.html"><i class="fa-solid fa-angle-right"></i> Fountain Pens</a>
+                <a href="/stationery.html"><i class="fa-solid fa-angle-right"></i> Geometry Boxes</a>
+                <a href="/stationery.html"><i class="fa-solid fa-angle-right"></i> Archival Journals</a>
+            </div>
+
+            <div class="footer-contact reveal-up delay-4">
+                <h4>Reach Our Desk</h4>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Badvel Bypass Road, Kadapa,<br>Andhra Pradesh, India
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 93462 54321
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    kasi@stationeryhouse.com
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <div class="container copyright-flex">
+                <p>© 2026 Stationery House. All Rights Reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 15px;">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- ================= CONTACT MODAL ================= -->
+    <div class="modal" id="contactModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeContactModal">&times;</button>
+            <span class="vintage-ornament">Direct Institutional Desk</span>
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Send Academic Enquiry</h3>
+            <form id="enquiryForm" style="display: grid; gap: 15px;">
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Your Name / Institution</label>
+                    <input type="text" id="contactName" required placeholder="e.g. Kadapa Heritage Academy" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Email Address</label>
+                    <input type="email" id="contactEmail" required placeholder="principal@institution.org" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Contact Phone</label>
+                    <input type="tel" id="contactPhone" required placeholder="+91 98765 43210" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Enquiry Type</label>
+                    <select id="contactType" style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);">
+                        <option>The Shelf — Institutional Partnership</option>
+                        <option>Curated School Kits Bulk Order</option>
+                        <option>Board Textbooks Requirement</option>
+                        <option>Artisan Stationery Supply</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px;">Requirements / Note</label>
+                    <textarea id="contactMsg" rows="3" required placeholder="Describe quantity and required delivery dates..." style="width: 100%; padding: 12px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--bg-body); color: var(--text-main);"></textarea>
+                </div>
+                <button type="submit" class="primary-btn" style="width: 100%; justify-content: center; margin-top: 5px;">
+                    Submit Enquiry
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-msg" id="toastMsg">
+        Action completed successfully ✓
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="about.js">
+        
+    </script>
+</body>
+</html>
